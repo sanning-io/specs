@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "capture_not_at_head",
+  "at": "/metadata/capture",
+  "reasons": [
+    {
+      "reason": "capture_not_at_head",
+      "at": "/metadata/capture"
+    }
+  ],
+  "findings": []
+}

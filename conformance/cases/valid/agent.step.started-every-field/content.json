@@ -1,0 +1,6 @@
+{
+  "inputs": {
+    "query": "Quote EUR."
+  },
+  "run_type": "chain"
+}

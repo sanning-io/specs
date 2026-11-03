@@ -1,0 +1,74 @@
+{
+  "event_id": "87e4e861-8901-4895-a1b4-7cd8790277d3",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "agent.step.ended",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a",
+      "name": "quote-agent"
+    },
+    "previous_hash": "71547e237559add83f6c9279fdb5762eafee857a1060e2d97c0316a70cefb6ba",
+    "event": {
+      "content_hash": "0d05610eb2cad756b58a4150be1646cec49ad4e211c3b99d87009add3d4f9f32",
+      "content_length": 31,
+      "ref": "s3+opaque:cecb16dab79249cde9d914f56461c2f8f2b47cab32bf98252c3362fc98022899"
+    },
+    "context": {
+      "data_mode": "private",
+      "salt": "693197433a922a5adeb8c54d6f1f8899",
+      "case_id": "case-0001",
+      "chain_key": "chain-quote-agent",
+      "content_scrubbed": true,
+      "revealed": [
+        "exception.message"
+      ],
+      "zz_unknown": true
+    },
+    "metadata": {
+      "run": {
+        "run_id": "329324b3-a123-4bda-9c0c-33f9bc9a9d1a",
+        "parent_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "root_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "seq": 3,
+        "prev_event_id": "736bed8b-8dc3-4a57-947e-4bdd3b4824bd",
+        "source_type": "chain",
+        "name": "plan_node",
+        "started_event_id": "736bed8b-8dc3-4a57-947e-4bdd3b4824bd",
+        "observed_started_at": "2026-10-27T09:30:00.125Z",
+        "plumbing": true
+      },
+      "otel": {
+        "scope": {
+          "name": "@sanning/anchor-langchain",
+          "version": "1.0.0",
+          "schema_url": "https://opentelemetry.io/schemas/1.41.0"
+        },
+        "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+        "span_id": "00f067aa0ba902b7"
+      },
+      "gen_ai": {
+        "agent": {
+          "version": "2.3.0"
+        },
+        "conversation": {
+          "id": "thread-0001"
+        }
+      },
+      "outcome": {
+        "status": "failed"
+      },
+      "error": {
+        "type": "TimeoutError"
+      },
+      "exception": {
+        "message": "upstream timed out after 30 s"
+      }
+    },
+    "extras": {
+      "event_schema": "sanning.agent/1"
+    }
+  }
+}

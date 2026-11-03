@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "missing_field",
+  "at": "/metadata/openai/response/system_fingerprint",
+  "reasons": [
+    {
+      "reason": "missing_field",
+      "at": "/metadata/openai/response/system_fingerprint"
+    }
+  ],
+  "findings": []
+}

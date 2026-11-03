@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "missing_field",
+  "at": "/metadata/handoff",
+  "reasons": [
+    {
+      "reason": "missing_field",
+      "at": "/metadata/handoff"
+    }
+  ],
+  "findings": []
+}

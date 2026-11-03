@@ -1,0 +1,22 @@
+{
+  "event_id": "fb9dc6ee-26cf-49b1-91a4-430fdc892d55",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "runner.relay",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a"
+    },
+    "previous_hash": "GENESIS",
+    "event": {
+      "content_hash": "cfac3ef5d668c47f8c8b11160ef5f24e74ee15f80deb6f14ac30f7d8b1802842"
+    },
+    "context": {
+      "salt": "7674d63b7839c959adddd3c94b3851dg"
+    },
+    "metadata": {},
+    "extras": {}
+  }
+}

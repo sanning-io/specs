@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "missing_field",
+  "at": "/metadata/gen_ai/usage/reasoning/output_tokens",
+  "reasons": [
+    {
+      "reason": "missing_field",
+      "at": "/metadata/gen_ai/usage/reasoning/output_tokens"
+    }
+  ],
+  "findings": []
+}

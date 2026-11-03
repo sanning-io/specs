@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "bad_value",
+  "at": "/context/case_id",
+  "reasons": [
+    {
+      "reason": "bad_value",
+      "at": "/context/case_id"
+    }
+  ],
+  "findings": []
+}

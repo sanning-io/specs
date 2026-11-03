@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "missing_field",
+  "at": "/event/content_type",
+  "reasons": [
+    {
+      "reason": "missing_field",
+      "at": "/event/content_type"
+    }
+  ],
+  "findings": []
+}

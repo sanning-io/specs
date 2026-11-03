@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "missing_field",
+  "at": "/context/data_mode",
+  "reasons": [
+    {
+      "reason": "missing_field",
+      "at": "/context/data_mode"
+    }
+  ],
+  "findings": []
+}

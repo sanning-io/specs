@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "unknown_field",
+  "at": "/metadata/gen_ai/zz_unknown",
+  "reasons": [
+    {
+      "reason": "unknown_field",
+      "at": "/metadata/gen_ai/zz_unknown"
+    }
+  ],
+  "findings": []
+}

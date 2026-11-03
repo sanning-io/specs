@@ -1,0 +1,22 @@
+{
+  "event_id": "7836fd1d-0ed8-4a49-b1c0-f89bab3714aa",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "runner.run_opened",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a"
+    },
+    "previous_hash": "GENESIS",
+    "event": {
+      "content_hash": "55d486fc265c290510a530cf6c11dbe89d47b5af9ee57aeb7549f90ac1bb5bc5"
+    },
+    "context": {
+      "salt": "7674d63b7839c959adddd3c94b3851dc\n"
+    },
+    "metadata": {},
+    "extras": {}
+  }
+}

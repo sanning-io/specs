@@ -1,0 +1,1 @@
+An agent.decision with a salt in upper-case hex and an unknown member metadata.foo: the salt is read at step 4 with the rest of the schema, where unknown_field comes before bad_value. It is not read at step 1.

@@ -1,0 +1,443 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sanning.io/specs/schemas/sanning.agent/1/common.json",
+  "title": "sanning.agent/1 shared definitions",
+  "description": "Definitions every sanning.agent/1 type schema refers to. Normative text: agent-events.md.",
+  "$defs": {
+    "id": {
+      "description": "An opaque identifier: a framework run id, a case id, a conversation id. Never hashed.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9_.:-]+$"
+    },
+    "id_or_null": {
+      "description": "An opaque identifier, or null where null is the fact (a root run has no parent).",
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9_.:-]+$"
+    },
+    "event_id": {
+      "description": "An envelope event_id: a lowercase UUID v4.",
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "event_id_or_null": {
+      "description": "An envelope event_id, or null at the head of a chain.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "provider_id": {
+      "description": "An identifier a model provider minted, or an adapter assigned: the opaque grammar, at most 256 characters.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256,
+      "pattern": "^[A-Za-z0-9_.:-]+$"
+    },
+    "sha256": {
+      "description": "SHA-256, 64 lowercase hex characters.",
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "sha256_either_case": {
+      "description": "SHA-256, 64 hex characters in either case (agent-events.md section 4.2).",
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "public_key": {
+      "description": "An Ed25519 public key, 64 lowercase hex characters.",
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "uint": {
+      "description": "An integer from 0 to 2^53 - 1.",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "pos_int": {
+      "description": "An integer from 1 to 2^53 - 1.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "safe_int": {
+      "description": "An integer from -(2^53 - 1) to 2^53 - 1.",
+      "type": "integer",
+      "minimum": -9007199254740991,
+      "maximum": 9007199254740991
+    },
+    "number": {
+      "description": "A finite JSON number.",
+      "type": "number"
+    },
+    "label": {
+      "description": "A short name or code: 1 to 128 characters, no control characters.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[^\\u0000-\\u001f\\u007f]+$"
+    },
+    "text": {
+      "description": "A name: 1 to 256 characters, no control characters.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256,
+      "pattern": "^[^\\u0000-\\u001f\\u007f]+$"
+    },
+    "string": {
+      "description": "Any string: used only for hash-only fields, which carry content when revealed.",
+      "type": "string"
+    },
+    "locator": {
+      "description": "Where a file was or went, in the tool's words: 1 to 2048 characters, no control characters.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2048,
+      "pattern": "^[^\\u0000-\\u001f\\u007f]+$"
+    },
+    "any": {
+      "description": "Any JSON value: a revealed field carries what the content held."
+    },
+    "rfc3339_utc": {
+      "description": "An RFC 3339 UTC timestamp ending in Z, a fraction of at most 9 digits: at most 30 characters.",
+      "type": "string",
+      "maxLength": 30,
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]{1,9})?Z$"
+    },
+    "ref": {
+      "description": "A locator URI: an ASCII scheme other than data, a colon and RFC 3986 characters, at most 2048 in all.",
+      "type": "string",
+      "maxLength": 2048,
+      "pattern": "^[A-Za-z][A-Za-z0-9+.-]*:[A-Za-z0-9._~:/?#\\[\\]@!$&'()*+,;=%-]+$",
+      "not": {
+        "pattern": "^[Dd][Aa][Tt][Aa]:"
+      }
+    },
+    "data_mode": {
+      "description": "What Sanning receives.",
+      "enum": [
+        "private",
+        "standard",
+        "full"
+      ]
+    },
+    "salt": {
+      "description": "A random 128-bit value, 32 lowercase hex characters, fresh for each record. Sanning receives it only in full.",
+      "type": "string",
+      "pattern": "^[0-9a-f]{32}$"
+    },
+    "custom_name": {
+      "description": "A dotted name, for custom.name and for run.source_type on agent.step.occurred: dot-separated segments, each a-z then a-z 0-9 _, at most 64 characters.",
+      "type": "string",
+      "maxLength": 64,
+      "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$"
+    },
+    "outcome_status": {
+      "description": "How an operation ended.",
+      "enum": [
+        "completed",
+        "failed",
+        "interrupted",
+        "skipped"
+      ]
+    },
+    "file_status": {
+      "description": "Whether the adapter hashed the file: completed, or failed with artifact.reason.",
+      "enum": [
+        "completed",
+        "failed"
+      ]
+    },
+    "closing_status": {
+      "description": "How a run ended, as the closing record states it.",
+      "enum": [
+        "completed",
+        "failed",
+        "interrupted",
+        "unknown"
+      ]
+    },
+    "closing_reason": {
+      "description": "Why a run ended other than completed, as a code. Any text is in the content of the record that carries the failure.",
+      "enum": [
+        "error",
+        "timeout",
+        "cancelled",
+        "interrupted",
+        "policy"
+      ]
+    },
+    "provider_name": {
+      "description": "OpenTelemetry GenAI 1.41.0 well-known provider names, plus openrouter.",
+      "enum": [
+        "anthropic",
+        "aws.bedrock",
+        "azure.ai.inference",
+        "azure.ai.openai",
+        "cohere",
+        "deepseek",
+        "gcp.gemini",
+        "gcp.gen_ai",
+        "gcp.vertex_ai",
+        "groq",
+        "ibm.watsonx.ai",
+        "mistral_ai",
+        "openai",
+        "perplexity",
+        "x_ai",
+        "openrouter"
+      ]
+    },
+    "model_operation": {
+      "description": "gen_ai.operation.name values for a model call (OpenTelemetry GenAI 1.41.0).",
+      "enum": [
+        "chat",
+        "text_completion",
+        "generate_content",
+        "embeddings"
+      ]
+    },
+    "agent_type": {
+      "description": "One of the 19 sanning.agent/1 type names.",
+      "enum": [
+        "agent.run_opened",
+        "agent.run_closed",
+        "agent.step.started",
+        "agent.step.ended",
+        "agent.model_call.started",
+        "agent.model_call.ended",
+        "agent.tool_call.started",
+        "agent.tool_call.ended",
+        "agent.retrieval.started",
+        "agent.retrieval.ended",
+        "agent.approval.requested",
+        "agent.approval.resolved",
+        "agent.handoff.sent",
+        "agent.handoff.received",
+        "agent.decision",
+        "agent.custom",
+        "agent.file",
+        "agent.error",
+        "agent.step.occurred"
+      ]
+    },
+    "approval_actor": {
+      "enum": [
+        "human",
+        "policy",
+        "model"
+      ]
+    },
+    "approval_verdict": {
+      "enum": [
+        "approved",
+        "rejected",
+        "edited",
+        "responded"
+      ]
+    },
+    "artifact_role": {
+      "enum": [
+        "input",
+        "output"
+      ]
+    },
+    "artifact_reason": {
+      "description": "Why a file could not be hashed.",
+      "enum": [
+        "outside_root",
+        "not_found",
+        "not_a_regular_file",
+        "too_large",
+        "read_failed",
+        "path_reading_disabled"
+      ]
+    },
+    "handoff_outcome": {
+      "enum": [
+        "accepted",
+        "rejected",
+        "failed"
+      ]
+    },
+    "previous_hash": {
+      "description": "The previous record's payload_hash on this chain, or GENESIS.",
+      "type": "string",
+      "pattern": "^(GENESIS|[0-9a-f]{64})$"
+    },
+    "subject": {
+      "description": "The agent that signed the record (events.md section 5).",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "const": "agent"
+        },
+        "agent_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_.:-]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9_.:-]+$"
+        }
+      }
+    },
+    "otel": {
+      "description": "The recorder that wrote the record, and real OpenTelemetry ids where a span exists.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope"
+      ],
+      "properties": {
+        "scope": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "version",
+            "schema_url"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 214,
+              "pattern": "^(@[a-z0-9][a-z0-9._-]*/)?[A-Za-z0-9][A-Za-z0-9._-]*$"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64,
+              "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(-((0|[1-9][0-9]*|[0-9]*[A-Za-z-][0-9A-Za-z-]*)(\\.(0|[1-9][0-9]*|[0-9]*[A-Za-z-][0-9A-Za-z-]*))*))?(\\+([0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*))?$"
+            },
+            "schema_url": {
+              "const": "https://opentelemetry.io/schemas/1.41.0"
+            }
+          }
+        },
+        "trace_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{32}$",
+          "not": {
+            "const": "00000000000000000000000000000000"
+          }
+        },
+        "span_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{16}$",
+          "not": {
+            "const": "0000000000000000"
+          }
+        }
+      }
+    },
+    "extras": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_schema"
+      ],
+      "properties": {
+        "event_schema": {
+          "const": "sanning.agent/1"
+        }
+      }
+    },
+    "content_event": {
+      "description": "The event section of every agent record except the two hand-off types.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "content_hash"
+      ],
+      "properties": {
+        "content_hash": {
+          "$ref": "#/$defs/sha256"
+        },
+        "content_length": {
+          "$ref": "#/$defs/uint"
+        },
+        "ref": {
+          "$ref": "#/$defs/ref"
+        }
+      }
+    },
+    "handoff_event_sent": {
+      "description": "The event section of agent.handoff.sent, closed (agent-events.md section 4.2).",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "message_hash",
+        "content_type",
+        "counterparty_public_key",
+        "sequence"
+      ],
+      "properties": {
+        "message_hash": {
+          "$ref": "#/$defs/sha256_either_case"
+        },
+        "message_bytes_hash": {
+          "$ref": "#/$defs/sha256_either_case"
+        },
+        "content_type": {
+          "$ref": "#/$defs/label"
+        },
+        "counterparty_public_key": {
+          "$ref": "#/$defs/public_key"
+        },
+        "sequence": {
+          "$ref": "#/$defs/pos_int"
+        }
+      }
+    },
+    "handoff_event_received": {
+      "description": "The event section of agent.handoff.received, closed (agent-events.md section 4.2).",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "message_hash",
+        "content_type",
+        "counterparty_public_key",
+        "sequence",
+        "outcome"
+      ],
+      "properties": {
+        "message_hash": {
+          "$ref": "#/$defs/sha256_either_case"
+        },
+        "message_bytes_hash": {
+          "$ref": "#/$defs/sha256_either_case"
+        },
+        "content_type": {
+          "$ref": "#/$defs/label"
+        },
+        "counterparty_public_key": {
+          "$ref": "#/$defs/public_key"
+        },
+        "sequence": {
+          "$ref": "#/$defs/pos_int"
+        },
+        "outcome": {
+          "$ref": "#/$defs/handoff_outcome"
+        }
+      }
+    }
+  }
+}

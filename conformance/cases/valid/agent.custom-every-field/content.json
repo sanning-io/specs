@@ -1,0 +1,6 @@
+{
+  "name": "order.flagged",
+  "value": {
+    "rule": "rate_above_limit"
+  }
+}

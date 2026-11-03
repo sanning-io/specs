@@ -1,0 +1,86 @@
+{
+  "event_id": "804457ef-2674-462d-893d-0f045d25c3d0",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "agent.tool_call.ended",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a",
+      "name": "quote-agent"
+    },
+    "previous_hash": "71547e237559add83f6c9279fdb5762eafee857a1060e2d97c0316a70cefb6ba",
+    "event": {
+      "content_hash": "7492488cc82cc00c590e3345ba2a9d9bff453b3e21046f4c859fcb153ae33bb4",
+      "content_length": 32,
+      "ref": "s3+opaque:69c29d5f9913719a562243bf5a46cf604cb45487f8fa2b895d8a73003712b153"
+    },
+    "context": {
+      "data_mode": "private",
+      "salt": "d182b71e5b634a508e0bcd0078739f8e",
+      "case_id": "case-0001",
+      "chain_key": "chain-quote-agent",
+      "content_scrubbed": true,
+      "revealed": [
+        "gen_ai.tool.call.result",
+        "exception.message"
+      ],
+      "zz_unknown": true
+    },
+    "metadata": {
+      "run": {
+        "run_id": "094f235f-b634-4ae7-a212-ee0b7557272c",
+        "parent_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "root_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "seq": 7,
+        "prev_event_id": "9cb3e98e-9337-40fe-bfa4-974b81dc930e",
+        "source_type": "tool",
+        "name": "lookup_rate",
+        "started_event_id": "9cb3e98e-9337-40fe-bfa4-974b81dc930e",
+        "observed_started_at": "2026-10-27T09:30:00.125Z"
+      },
+      "otel": {
+        "scope": {
+          "name": "@sanning/anchor-langchain",
+          "version": "1.0.0",
+          "schema_url": "https://opentelemetry.io/schemas/1.41.0"
+        },
+        "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+        "span_id": "00f067aa0ba902b7"
+      },
+      "gen_ai": {
+        "operation": {
+          "name": "execute_tool"
+        },
+        "agent": {
+          "version": "2.3.0"
+        },
+        "conversation": {
+          "id": "thread-0001"
+        },
+        "tool": {
+          "name": "lookup_rate",
+          "call": {
+            "id": "call_0001",
+            "result": {
+              "rate": "3.50"
+            }
+          }
+        }
+      },
+      "outcome": {
+        "status": "failed"
+      },
+      "error": {
+        "type": "TimeoutError"
+      },
+      "exception": {
+        "message": "upstream timed out after 30 s"
+      }
+    },
+    "extras": {
+      "event_schema": "sanning.agent/1"
+    }
+  }
+}

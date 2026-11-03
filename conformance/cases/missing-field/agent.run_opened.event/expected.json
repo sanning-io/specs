@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "missing_field",
+  "at": "/event",
+  "reasons": [
+    {
+      "reason": "missing_field",
+      "at": "/event"
+    }
+  ],
+  "findings": []
+}

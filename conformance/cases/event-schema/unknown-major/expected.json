@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "incomplete",
+  "reason": "event_schema_unknown",
+  "at": "/extras/event_schema",
+  "reasons": [
+    {
+      "reason": "event_schema_unknown",
+      "at": "/extras/event_schema"
+    }
+  ],
+  "findings": []
+}

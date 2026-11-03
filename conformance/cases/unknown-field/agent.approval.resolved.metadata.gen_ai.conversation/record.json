@@ -1,0 +1,78 @@
+{
+  "event_id": "bfef49d1-b10f-4a19-a214-bf0a16c6ea4f",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "agent.approval.resolved",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a",
+      "name": "quote-agent"
+    },
+    "previous_hash": "71547e237559add83f6c9279fdb5762eafee857a1060e2d97c0316a70cefb6ba",
+    "event": {
+      "content_hash": "7a40c15986bf88f9bc5c3f7bdf93a21be59e1c76e84d63c5a0613fa8ccd863f4",
+      "content_length": 168,
+      "ref": "s3+opaque:bdf6e022d83ce29bbe32c90df0d008d448900777ccc02f51f2551a47602856ec"
+    },
+    "context": {
+      "data_mode": "private",
+      "salt": "6466e80b9fa7427467924dd4274d3d02",
+      "case_id": "case-0001",
+      "chain_key": "chain-quote-agent",
+      "content_scrubbed": true,
+      "revealed": [
+        "approval.reviewer",
+        "approval.notes",
+        "approval.edited_action"
+      ]
+    },
+    "metadata": {
+      "run": {
+        "run_id": "5ad6b15e-473e-4da3-990c-dd10f78a2214",
+        "parent_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "root_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "seq": 11,
+        "prev_event_id": "dd0714f6-1649-4161-9f48-ceca55cbcd8b",
+        "source_type": "interrupt",
+        "started_event_id": "dd0714f6-1649-4161-9f48-ceca55cbcd8b"
+      },
+      "otel": {
+        "scope": {
+          "name": "@sanning/anchor-langchain",
+          "version": "1.0.0",
+          "schema_url": "https://opentelemetry.io/schemas/1.41.0"
+        },
+        "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+        "span_id": "00f067aa0ba902b7"
+      },
+      "gen_ai": {
+        "agent": {
+          "version": "2.3.0"
+        },
+        "conversation": {
+          "id": "thread-0001",
+          "zz_unknown": true
+        }
+      },
+      "approval": {
+        "actor": "human",
+        "policy_hash": "0eec84ec04e5f316b38491c8b4ec17e8d06dbc0a17f9e949682a7a7e14da1a82",
+        "subject_event_id": "9cb3e98e-9337-40fe-bfa4-974b81dc930e",
+        "verdict": "edited",
+        "reviewer": {
+          "id": "reviewer-7"
+        },
+        "notes": "amount capped",
+        "edited_action": {
+          "tool": "transfer",
+          "amount": "100.00"
+        }
+      }
+    },
+    "extras": {
+      "event_schema": "sanning.agent/1"
+    }
+  }
+}

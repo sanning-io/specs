@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "bad_value",
+  "at": "/metadata/run/observed_started_at",
+  "reasons": [
+    {
+      "reason": "bad_value",
+      "at": "/metadata/run/observed_started_at"
+    }
+  ],
+  "findings": []
+}

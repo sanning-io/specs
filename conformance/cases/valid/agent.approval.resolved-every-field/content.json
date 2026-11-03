@@ -1,0 +1,16 @@
+{
+  "edited_action": {
+    "tool": "transfer",
+    "amount": "100.00"
+  },
+  "notes": "amount capped",
+  "response": {
+    "decision": "edit",
+    "args": {
+      "amount": "100.00"
+    }
+  },
+  "reviewer": {
+    "id": "reviewer-7"
+  }
+}

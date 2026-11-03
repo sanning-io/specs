@@ -1,0 +1,17 @@
+{
+  "valid": true,
+  "verdict": "incomplete",
+  "reason": "listed_record_absent",
+  "at": "/metadata/closing/record_ids/2",
+  "reasons": [
+    {
+      "reason": "listed_record_absent",
+      "at": "/metadata/closing/record_ids/2"
+    },
+    {
+      "reason": "listed_record_absent",
+      "at": "/metadata/closing/record_ids/10"
+    }
+  ],
+  "findings": []
+}

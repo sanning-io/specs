@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "revealed_field_absent",
+  "at": "/metadata/gen_ai/system_instructions",
+  "reasons": [
+    {
+      "reason": "revealed_field_absent",
+      "at": "/metadata/gen_ai/system_instructions"
+    }
+  ],
+  "findings": []
+}

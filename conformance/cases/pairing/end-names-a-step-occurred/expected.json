@@ -1,0 +1,13 @@
+{
+  "valid": true,
+  "verdict": "failed",
+  "reason": "pair_type_mismatch",
+  "at": "/metadata/run/started_event_id",
+  "reasons": [
+    {
+      "reason": "pair_type_mismatch",
+      "at": "/metadata/run/started_event_id"
+    }
+  ],
+  "findings": []
+}

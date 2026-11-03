@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "bad_value",
+  "at": "/metadata/gen_ai/conversation/id",
+  "reasons": [
+    {
+      "reason": "bad_value",
+      "at": "/metadata/gen_ai/conversation/id"
+    }
+  ],
+  "findings": []
+}

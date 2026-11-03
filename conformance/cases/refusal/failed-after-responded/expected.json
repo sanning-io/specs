@@ -1,0 +1,7 @@
+{
+  "valid": true,
+  "verdict": "verified",
+  "findings": [
+    "ran_after_refusal"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "missing_field",
+  "at": "/metadata/gen_ai/conversation/id",
+  "reasons": [
+    {
+      "reason": "missing_field",
+      "at": "/metadata/gen_ai/conversation/id"
+    }
+  ],
+  "findings": []
+}

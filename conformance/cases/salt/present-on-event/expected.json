@@ -1,0 +1,7 @@
+{
+  "valid": true,
+  "verdict": null,
+  "findings": [
+    "not_an_agent_record"
+  ]
+}

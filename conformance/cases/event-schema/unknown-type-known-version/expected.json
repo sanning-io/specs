@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "event_type_not_in_set",
+  "at": "/event_type",
+  "reasons": [
+    {
+      "reason": "event_type_not_in_set",
+      "at": "/event_type"
+    }
+  ],
+  "findings": []
+}

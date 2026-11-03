@@ -1,0 +1,82 @@
+{
+  "event_id": "3697dc06-dafb-446e-b795-b9c217c6585f",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "agent.run_opened",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a",
+      "name": "quote-agent"
+    },
+    "previous_hash": "GENESIS",
+    "event": {
+      "content_hash": "d7485b33f6b113d245ca1ceea1e4309fb63ce50708369d99f83b11aa757835ca",
+      "content_length": 187,
+      "ref": "s3+opaque:64b12ef59d3e692cf6e0f7cda49c90d81600c16ea530e5f9bcdf9135d63929d3"
+    },
+    "context": {
+      "data_mode": "private",
+      "salt": "984a66563936ac8657b0f04c4d04dcb2",
+      "case_id": "case-0001",
+      "chain_key": "chain-quote-agent",
+      "content_scrubbed": true,
+      "revealed": [
+        "authority.principal"
+      ]
+    },
+    "metadata": {
+      "run": {
+        "run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "parent_run_id": null,
+        "root_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "seq": 0,
+        "prev_event_id": null,
+        "source_type": "graph",
+        "name": "quote_agent",
+        "runner_event_id": "5acac936-28dc-4517-baa1-fc3c3dc0f801",
+        "handoff_event_id": "7adf49c6-4841-43b3-b839-9c9470afaf4f"
+      },
+      "otel": {
+        "scope": {
+          "name": "@sanning/anchor-langchain",
+          "version": "1.0.0",
+          "schema_url": "https://opentelemetry.io/schemas/1.41.0"
+        },
+        "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+        "span_id": "00f067aa0ba902b7"
+      },
+      "gen_ai": {
+        "operation": {
+          "name": "invoke_agent"
+        },
+        "agent": {
+          "version": "2.3.0"
+        },
+        "conversation": {
+          "id": "thread-0001"
+        }
+      },
+      "capture": {
+        "not_captured": [
+          "agent.retrieval.started",
+          "agent.retrieval.ended"
+        ]
+      },
+      "authority": {
+        "scope": [
+          "rates:read",
+          "quotes:write"
+        ],
+        "expires_at": "2026-10-27T18:00:00Z",
+        "principal": {
+          "subject": "user-0042"
+        }
+      }
+    },
+    "extras": {
+      "event_schema": "sanning.agent/1"
+    }
+  }
+}

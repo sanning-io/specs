@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "missing_field",
+  "at": "/spec_version",
+  "reasons": [
+    {
+      "reason": "missing_field",
+      "at": "/spec_version"
+    }
+  ],
+  "findings": []
+}

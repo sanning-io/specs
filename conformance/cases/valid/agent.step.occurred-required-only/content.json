@@ -1,0 +1,7 @@
+{
+  "log": "Look up the EUR rate.",
+  "tool": "lookup_rate",
+  "tool_input": {
+    "currency": "EUR"
+  }
+}

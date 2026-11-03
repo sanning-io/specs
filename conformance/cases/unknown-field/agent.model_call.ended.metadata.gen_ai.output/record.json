@@ -1,0 +1,114 @@
+{
+  "event_id": "c2a6da2f-8851-4a4d-b39c-27b0b62f86c4",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "agent.model_call.ended",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a",
+      "name": "quote-agent"
+    },
+    "previous_hash": "71547e237559add83f6c9279fdb5762eafee857a1060e2d97c0316a70cefb6ba",
+    "event": {
+      "content_hash": "135ddd85615068cf3cb480238f2f70fcd3844c6ea6f46459c24e4736dae57e0b",
+      "content_length": 86,
+      "ref": "s3+opaque:5f74ec0f45abb6d9a37b038e79d45c151e0e37df8e8cdc6c623472de3d075f72"
+    },
+    "context": {
+      "data_mode": "private",
+      "salt": "7741f87ae4d8204620ea2d41cb7a441e",
+      "case_id": "case-0001",
+      "chain_key": "chain-quote-agent",
+      "content_scrubbed": true,
+      "revealed": [
+        "gen_ai.output.messages",
+        "exception.message"
+      ]
+    },
+    "metadata": {
+      "run": {
+        "run_id": "8de4514d-fdee-4e3c-96d2-fe47f6ef5b06",
+        "parent_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "root_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "seq": 5,
+        "prev_event_id": "5e131c1b-ffc0-4917-b5c1-c9e53659b0fc",
+        "source_type": "chat_model",
+        "name": "ChatOpenAI",
+        "client": "ChatOpenAI",
+        "started_event_id": "5e131c1b-ffc0-4917-b5c1-c9e53659b0fc",
+        "observed_started_at": "2026-10-27T09:30:00.125Z"
+      },
+      "otel": {
+        "scope": {
+          "name": "@sanning/anchor-langchain",
+          "version": "1.0.0",
+          "schema_url": "https://opentelemetry.io/schemas/1.41.0"
+        },
+        "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+        "span_id": "00f067aa0ba902b7"
+      },
+      "gen_ai": {
+        "operation": {
+          "name": "chat"
+        },
+        "agent": {
+          "version": "2.3.0"
+        },
+        "conversation": {
+          "id": "thread-0001"
+        },
+        "provider": {
+          "name": "openai"
+        },
+        "response": {
+          "model": "gpt-4o-mini-2024-07-18",
+          "id": "chatcmpl-0001",
+          "finish_reasons": [
+            "tool_calls"
+          ]
+        },
+        "usage": {
+          "input_tokens": 812,
+          "output_tokens": 64,
+          "reasoning": {
+            "output_tokens": 0
+          }
+        },
+        "output": {
+          "messages": [
+            {
+              "role": "assistant",
+              "parts": [
+                {
+                  "type": "tool_call",
+                  "id": "call_0001",
+                  "name": "lookup_rate"
+                }
+              ]
+            }
+          ],
+          "zz_unknown": true
+        }
+      },
+      "outcome": {
+        "status": "failed"
+      },
+      "error": {
+        "type": "TimeoutError"
+      },
+      "exception": {
+        "message": "upstream timed out after 30 s"
+      },
+      "openai": {
+        "response": {
+          "system_fingerprint": "fp_0001"
+        }
+      }
+    },
+    "extras": {
+      "event_schema": "sanning.agent/1"
+    }
+  }
+}

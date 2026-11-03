@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "file_parts_exceed_parts",
+  "at": "/metadata/handoff/file_parts",
+  "reasons": [
+    {
+      "reason": "file_parts_exceed_parts",
+      "at": "/metadata/handoff/file_parts"
+    }
+  ],
+  "findings": []
+}

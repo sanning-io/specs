@@ -1,0 +1,1 @@
+The closing record lists records the verifier does not hold, beside a first record in another mode: the closing record reads incomplete, and step 7 still runs every sub-step, so the mode finding of step 7f is made.

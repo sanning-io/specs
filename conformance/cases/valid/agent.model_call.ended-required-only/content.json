@@ -1,0 +1,15 @@
+{
+  "generations": [
+    [
+      {
+        "text": "",
+        "tool_calls": [
+          {
+            "id": "call_0001",
+            "name": "lookup_rate"
+          }
+        ]
+      }
+    ]
+  ]
+}

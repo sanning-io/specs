@@ -1,0 +1,9 @@
+{
+  "valid": true,
+  "verdict": "verified",
+  "findings": [
+    "data_mode_mixed",
+    "seq_duplicate",
+    "seq_gap"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "event_id": "9cb3e98e-9337-40fe-bfa4-974b81dc930e",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "agent.tool_call.started",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a",
+      "name": "quote-agent"
+    },
+    "previous_hash": "71547e237559add83f6c9279fdb5762eafee857a1060e2d97c0316a70cefb6ba",
+    "event": {
+      "content_hash": "2ea7689b5c81d028dd080b4cd06c37001fccf393bc9992e73d2a81ccaafee98a",
+      "content_length": 61,
+      "ref": "s3+opaque:f65487ec7519bf312794e8c07df739a958cb089be77c136111c6d87a8e639004"
+    },
+    "context": {
+      "data_mode": "private",
+      "salt": "688f84f8cdfc0700f6bfdf16aaf0daa7",
+      "case_id": "case-0001",
+      "chain_key": "chain-quote-agent",
+      "content_scrubbed": true,
+      "revealed": [
+        "gen_ai.tool.call.arguments"
+      ]
+    },
+    "metadata": {
+      "run": {
+        "run_id": "094f235f-b634-4ae7-a212-ee0b7557272c",
+        "parent_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "root_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "seq": 6,
+        "prev_event_id": "c2a6da2f-8851-4a4d-b39c-27b0b62f86c4",
+        "source_type": "tool",
+        "name": "lookup_rate"
+      },
+      "otel": {
+        "scope": {
+          "name": "@sanning/anchor-langchain",
+          "version": "1.0.0",
+          "schema_url": "https://opentelemetry.io/schemas/1.41.0"
+        },
+        "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+        "span_id": "00f067aa0ba902b7"
+      },
+      "gen_ai": {
+        "operation": {
+          "name": "execute_tool"
+        },
+        "agent": {
+          "version": "2.3.0"
+        },
+        "conversation": {
+          "id": "thread-0001",
+          "zz_unknown": true
+        },
+        "tool": {
+          "name": "lookup_rate",
+          "call": {
+            "id": "call_0001",
+            "arguments": {
+              "currency": "EUR"
+            }
+          }
+        }
+      }
+    },
+    "extras": {
+      "event_schema": "sanning.agent/1"
+    }
+  }
+}

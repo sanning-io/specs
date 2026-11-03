@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "verdict": "failed",
+  "reason": "pair_field_mismatch",
+  "at": "/metadata/approval/policy_hash",
+  "reasons": [
+    {
+      "reason": "pair_field_mismatch",
+      "at": "/metadata/approval/policy_hash"
+    }
+  ],
+  "findings": [
+    "content_scrubbed"
+  ]
+}

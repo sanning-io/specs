@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "closing_count_mismatch",
+  "at": "/metadata/closing/record_count",
+  "reasons": [
+    {
+      "reason": "closing_count_mismatch",
+      "at": "/metadata/closing/record_count"
+    }
+  ],
+  "findings": []
+}

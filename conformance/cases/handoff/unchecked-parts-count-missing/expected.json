@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "unchecked_held_parts_missing",
+  "at": "/context/unchecked_held_part_count",
+  "reasons": [
+    {
+      "reason": "unchecked_held_parts_missing",
+      "at": "/context/unchecked_held_part_count"
+    }
+  ],
+  "findings": []
+}

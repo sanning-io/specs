@@ -1,0 +1,60 @@
+{
+  "event_id": "30672110-9267-440a-8b8a-2b04c0341ebb",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "agent.handoff.sent",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a",
+      "name": "quote-agent"
+    },
+    "previous_hash": "71547e237559add83f6c9279fdb5762eafee857a1060e2d97c0316a70cefb6ba",
+    "event": {
+      "message_hash": "3f490f1c2b6ce84ddb110981461908a3e51bda3edf56fbf1abf1e088d5db1401",
+      "content_type": "application/json",
+      "counterparty_public_key": "2f425d3fb7dc821c59be7a59d961ff1bb46d792adf2145d85db0175c5a427660",
+      "sequence": 1,
+      "message_bytes_hash": "dfee9af76beb48fcbe3d26df39d125acf743a2a144fc27bfed523568b801f2ac"
+    },
+    "context": {
+      "data_mode": "private",
+      "salt": "001d8d0fd0a2c87c4ec145d71a6c78b6",
+      "case_id": "case-0001",
+      "chain_key": "chain-quote-agent",
+      "in_reply_to": "36d319aceb47d53e6709c1cd6988cd7d519a9ee5052e9733d32bb2f414707b2e",
+      "protocol": "a2a/1.0.0"
+    },
+    "metadata": {
+      "run": {
+        "run_id": "86c1c4f0-d9a8-4df3-aec0-1191ca00a47d",
+        "parent_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "root_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "seq": 12,
+        "prev_event_id": "bfef49d1-b10f-4a19-a214-bf0a16c6ea4f",
+        "source_type": "tool"
+      },
+      "otel": {
+        "scope": {
+          "name": "@sanning/anchor-langchain",
+          "version": "1.0.0",
+          "schema_url": "https://opentelemetry.io/schemas/1.41.0"
+        },
+        "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+        "span_id": "00f067aa0ba902b7"
+      },
+      "gen_ai": {
+        "agent": {
+          "version": "2.3.0"
+        },
+        "conversation": {
+          "id": "thread-0001"
+        }
+      }
+    },
+    "extras": {
+      "event_schema": "sanning.agent/1"
+    }
+  }
+}

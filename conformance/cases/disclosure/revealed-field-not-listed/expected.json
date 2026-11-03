@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "revealed_field_unlisted",
+  "at": "/metadata/gen_ai/tool/call/arguments",
+  "reasons": [
+    {
+      "reason": "revealed_field_unlisted",
+      "at": "/metadata/gen_ai/tool/call/arguments"
+    }
+  ],
+  "findings": []
+}

@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "artifact_reason_mismatch",
+  "at": "/metadata/artifact/reason",
+  "reasons": [
+    {
+      "reason": "artifact_reason_mismatch",
+      "at": "/metadata/artifact/reason"
+    }
+  ],
+  "findings": []
+}

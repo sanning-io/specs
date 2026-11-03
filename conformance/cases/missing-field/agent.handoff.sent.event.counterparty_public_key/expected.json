@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "missing_field",
+  "at": "/event/counterparty_public_key",
+  "reasons": [
+    {
+      "reason": "missing_field",
+      "at": "/event/counterparty_public_key"
+    }
+  ],
+  "findings": []
+}

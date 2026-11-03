@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "unknown_field",
+  "at": "/metadata/gen_ai/tool",
+  "reasons": [
+    {
+      "reason": "unknown_field",
+      "at": "/metadata/gen_ai/tool"
+    }
+  ],
+  "findings": []
+}

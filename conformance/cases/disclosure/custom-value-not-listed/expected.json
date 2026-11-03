@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "revealed_field_unlisted",
+  "at": "/metadata/custom/value",
+  "reasons": [
+    {
+      "reason": "revealed_field_unlisted",
+      "at": "/metadata/custom/value"
+    }
+  ],
+  "findings": []
+}

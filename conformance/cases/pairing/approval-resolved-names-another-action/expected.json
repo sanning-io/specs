@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "verdict": "failed",
+  "reason": "pair_field_mismatch",
+  "at": "/metadata/approval/subject_event_id",
+  "reasons": [
+    {
+      "reason": "pair_field_mismatch",
+      "at": "/metadata/approval/subject_event_id"
+    }
+  ],
+  "findings": [
+    "content_scrubbed"
+  ]
+}

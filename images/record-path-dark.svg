@@ -1,0 +1,65 @@
+<svg viewBox="0 0 820 330" xmlns="http://www.w3.org/2000/svg" role="img"
+   aria-label="The path of one record. An agent action becomes an event record in the sanning.agent/1 vocabulary, defined in agent-events.md; the agent hashes its content locally. The SDK signs the record in an envelope under the sanning.events/v2 profile, defined in events.md. Sanning stamps many envelopes into one Merkle root on a permanent public record, an interval stamp. The records, their envelopes, their inclusion proofs and the stamps are collected into an evidence pack and handed to a third party. A reader verifies the pack offline, on its own machine, with no call to Sanning, and gets one of three verdicts: Verified, Failed or Incomplete. A pack reads no better than its worst record, and a case reads its worst pack.">
+<style>
+  .lbl  { font-family:"Geist",sans-serif; font-size:12px; font-weight:500; fill:#F5F5F2; }
+  .sub  { font-family:"Geist Mono",monospace; font-size:9px; letter-spacing:.03em; fill:#A3A9B1; }
+  .zone { font-family:"Geist Mono",monospace; font-size:8.6px; letter-spacing:.13em; fill:#8A9098; }
+  .step { font-family:"Geist Mono",monospace; font-size:9px; letter-spacing:.07em; fill:#7D8CFF; }
+  .acc  { font-family:"Geist",sans-serif; font-size:12px; font-weight:500; fill:#7D8CFF; }
+</style>
+<rect x="0" y="0" width="820" height="330" fill="#0E1118"/>
+<rect x="10" y="10" width="185" height="112" fill="none" stroke="#262B36" stroke-width="1"/>
+<text class="zone" x="20" y="26" text-anchor="start">1 RECORD</text>
+<text class="lbl" x="24" y="50" text-anchor="start">Event record</text>
+<text class="sub" x="24" y="62" text-anchor="start">one agent action</text>
+<text class="sub" x="24" y="73" text-anchor="start">sanning.agent/1</text>
+<text class="sub" x="24" y="84" text-anchor="start">agent-events.md</text>
+<text class="sub" x="24" y="95" text-anchor="start">content hashed locally</text>
+<polyline points="195,66 210.0,66.0" fill="none" stroke="#F5F5F2" stroke-width="1"/>
+<polygon points="215,66 209.0,69.0 209.0,63.0" fill="#F5F5F2"/>
+<rect x="215" y="10" width="185" height="112" fill="none" stroke="#262B36" stroke-width="1"/>
+<text class="zone" x="225" y="26" text-anchor="start">2 ENVELOPE</text>
+<text class="lbl" x="229" y="50" text-anchor="start">Signed envelope</text>
+<text class="sub" x="229" y="62" text-anchor="start">sanning.events/v2</text>
+<text class="sub" x="229" y="73" text-anchor="start">events.md 2</text>
+<text class="sub" x="229" y="84" text-anchor="start">Ed25519 over the JCS bytes</text>
+<polyline points="400,66 415.0,66.0" fill="none" stroke="#F5F5F2" stroke-width="1"/>
+<polygon points="420,66 414.0,69.0 414.0,63.0" fill="#F5F5F2"/>
+<rect x="420" y="10" width="185" height="112" fill="none" stroke="#262B36" stroke-width="1"/>
+<text class="zone" x="430" y="26" text-anchor="start">3 STAMP</text>
+<text class="lbl" x="434" y="50" text-anchor="start">Interval stamp</text>
+<text class="sub" x="434" y="62" text-anchor="start">Merkle root over envelopes</text>
+<text class="sub" x="434" y="73" text-anchor="start">on a public record</text>
+<text class="sub" x="434" y="84" text-anchor="start">events.md 6</text>
+<polyline points="605,66 620.0,66.0" fill="none" stroke="#F5F5F2" stroke-width="1"/>
+<polygon points="625,66 619.0,69.0 619.0,63.0" fill="#F5F5F2"/>
+<rect x="625" y="10" width="185" height="112" fill="none" stroke="#262B36" stroke-width="1"/>
+<text class="zone" x="635" y="26" text-anchor="start">4 PACK</text>
+<text class="lbl" x="639" y="50" text-anchor="start">Evidence pack</text>
+<text class="sub" x="639" y="62" text-anchor="start">records and envelopes</text>
+<text class="sub" x="639" y="73" text-anchor="start">inclusion proofs, stamps</text>
+<text class="sub" x="639" y="84" text-anchor="start">for a third party</text>
+<polyline points="717,122 717.0,163.0" fill="none" stroke="#F5F5F2" stroke-width="1"/>
+<polygon points="717,168 714.0,162.0 720.0,162.0" fill="#F5F5F2"/>
+<rect x="10" y="168" width="800" height="152" fill="none" stroke="#262B36" stroke-width="1"/>
+<text class="zone" x="20" y="184" text-anchor="start">5 OFFLINE VERIFICATION</text>
+<text class="lbl" x="24" y="218" text-anchor="start">The reader's own machine</text>
+<text class="sub" x="24" y="230" text-anchor="start">recomputes every hash, signature</text>
+<text class="sub" x="24" y="241" text-anchor="start">and inclusion proof</text>
+<text class="sub" x="24" y="252" text-anchor="start">no account, no call to Sanning</text>
+<text class="sub" x="24" y="263" text-anchor="start">agent-events.md 10, each record</text>
+<polyline points="300,244 339.0,244.0" fill="none" stroke="#F5F5F2" stroke-width="1"/>
+<polygon points="344,244 338.0,247.0 338.0,241.0" fill="#F5F5F2"/>
+<rect x="350" y="204" width="140" height="80" fill="none" stroke="#7D8CFF" stroke-width="1"/>
+<text class="acc" x="364" y="232" text-anchor="start">Verified</text>
+<text class="sub" x="364" y="246" text-anchor="start">every check holds</text>
+<rect x="506" y="204" width="140" height="80" fill="none" stroke="#262B36" stroke-width="1"/>
+<text class="lbl" x="520" y="232" text-anchor="start">Failed</text>
+<text class="sub" x="520" y="246" text-anchor="start">a check is disproven</text>
+<rect x="662" y="204" width="140" height="80" fill="none" stroke="#262B36" stroke-width="1"/>
+<text class="lbl" x="676" y="232" text-anchor="start">Incomplete</text>
+<text class="sub" x="676" y="246" text-anchor="start">nothing disproven,</text>
+<text class="sub" x="676" y="257" text-anchor="start">a check not completed</text>
+<text class="sub" x="350" y="302" text-anchor="start">a pack reads no better than its worst record,</text>
+<text class="sub" x="350" y="313" text-anchor="start">and a case reads its worst pack</text>
+</svg>

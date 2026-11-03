@@ -1,0 +1,49 @@
+{
+  "event_id": "8607e2fb-d688-4acc-bbc0-03a0dfe8b87d",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "agent.file",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a"
+    },
+    "previous_hash": "GENESIS",
+    "event": {
+      "content_hash": "96f46f3743a160539c4c1c74390920f62184e7f3eea69171b8bfa59c53fc3a8a"
+    },
+    "context": {
+      "data_mode": "private",
+      "salt": "08f5713e686724fe77efdb8dc65dcb03",
+      "hidden": {
+        "artifact.path": "670cc72a6540d8e0592b5352b6e8695716e65af2f25dd1f0f7990f69260b0cfe"
+      }
+    },
+    "metadata": {
+      "run": {
+        "run_id": "26db5aff-869a-4d12-8d08-f7185fb0b476",
+        "parent_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "root_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "seq": 16,
+        "prev_event_id": "f3b59519-f220-4c9b-b97f-2cbf0281d128"
+      },
+      "otel": {
+        "scope": {
+          "name": "@sanning/anchor-langchain",
+          "version": "1.0.0",
+          "schema_url": "https://opentelemetry.io/schemas/1.41.0"
+        }
+      },
+      "outcome": {
+        "status": "failed"
+      },
+      "artifact": {
+        "path": "/work/out/quote.pdf"
+      }
+    },
+    "extras": {
+      "event_schema": "sanning.agent/1"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "event_id": "dd0714f6-1649-4161-9f48-ceca55cbcd8b",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "agent.approval.requested",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a",
+      "name": "quote-agent"
+    },
+    "previous_hash": "71547e237559add83f6c9279fdb5762eafee857a1060e2d97c0316a70cefb6ba",
+    "event": {
+      "content_hash": "5dd8a5527ca222e55d7786bdc4efef4bf94a26ce4d585e69ff47986f59cfd9bc",
+      "content_length": 48,
+      "ref": "s3+opaque:711b5e62bb87b34f2dd5242e256e7e4dda84dd640e35a66a71968dc43b614dc9"
+    },
+    "context": {
+      "data_mode": "private",
+      "salt": "e6c974237cf6d56ef4e76d90075929b2",
+      "case_id": "case-0001",
+      "chain_key": "chain-quote-agent",
+      "content_scrubbed": true,
+      "revealed": [
+        "approval.action"
+      ]
+    },
+    "metadata": {
+      "run": {
+        "run_id": "5ad6b15e-473e-4da3-990c-dd10f78a2214",
+        "parent_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "root_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "seq": 10,
+        "prev_event_id": "9ffc52e4-d7c1-47c0-b9c8-61620cd768c1",
+        "source_type": "interrupt"
+      },
+      "otel": {
+        "scope": {
+          "name": "@sanning/anchor-langchain",
+          "version": "1.0.0",
+          "schema_url": "https://opentelemetry.io/schemas/1.41.0"
+        },
+        "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+        "span_id": "00f067aa0ba902b7"
+      },
+      "gen_ai": {
+        "agent": {
+          "version": "2.3.0"
+        },
+        "conversation": {
+          "id": "thread-0001"
+        },
+        "zz_unknown": true
+      },
+      "approval": {
+        "actor": "human",
+        "policy_hash": "0eec84ec04e5f316b38491c8b4ec17e8d06dbc0a17f9e949682a7a7e14da1a82",
+        "subject_event_id": "9cb3e98e-9337-40fe-bfa4-974b81dc930e",
+        "action": {
+          "tool": "transfer",
+          "amount": "120.00"
+        }
+      }
+    },
+    "extras": {
+      "event_schema": "sanning.agent/1"
+    }
+  }
+}

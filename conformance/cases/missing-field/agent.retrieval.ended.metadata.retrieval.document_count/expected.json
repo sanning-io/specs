@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "missing_field",
+  "at": "/metadata/retrieval/document_count",
+  "reasons": [
+    {
+      "reason": "missing_field",
+      "at": "/metadata/retrieval/document_count"
+    }
+  ],
+  "findings": []
+}

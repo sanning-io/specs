@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "verdict": "verified",
+  "findings": [
+    "plumbing",
+    "content_scrubbed"
+  ]
+}

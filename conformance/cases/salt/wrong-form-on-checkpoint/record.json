@@ -1,0 +1,22 @@
+{
+  "event_id": "75da5dac-ae03-431c-8129-f34f4d5a63fe",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "checkpoint",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a"
+    },
+    "previous_hash": "GENESIS",
+    "event": {
+      "content_hash": "5c9733f2bb22ac3ff4d4416d33d8cae6b6d7bad27ca82e85e1a59e0518cc24e2"
+    },
+    "context": {
+      "salt": "7674d63b7839c959adddd3c94b3851d"
+    },
+    "metadata": {},
+    "extras": {}
+  }
+}

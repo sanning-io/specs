@@ -1,0 +1,25 @@
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  conformance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+        env:
+          CI: "true"
+      - run: npm test
+      - run: npm run mutate
+      - name: The committed schemas and cases are what the generator writes
+        run: |
+          npm run generate
+          git status --porcelain
+          test -z "$(git status --porcelain)"

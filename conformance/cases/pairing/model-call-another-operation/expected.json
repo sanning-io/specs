@@ -1,0 +1,13 @@
+{
+  "valid": true,
+  "verdict": "failed",
+  "reason": "pair_field_mismatch",
+  "at": "/metadata/gen_ai/operation/name",
+  "reasons": [
+    {
+      "reason": "pair_field_mismatch",
+      "at": "/metadata/gen_ai/operation/name"
+    }
+  ],
+  "findings": []
+}

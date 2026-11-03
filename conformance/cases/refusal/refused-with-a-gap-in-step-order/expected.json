@@ -1,0 +1,9 @@
+{
+  "valid": true,
+  "verdict": "verified",
+  "findings": [
+    "start_absent",
+    "ran_after_refusal",
+    "seq_gap"
+  ]
+}

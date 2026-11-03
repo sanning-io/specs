@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "unchecked_held_parts_missing",
+  "at": "/metadata/handoff/unchecked_held_parts",
+  "reasons": [
+    {
+      "reason": "unchecked_held_parts_missing",
+      "at": "/metadata/handoff/unchecked_held_parts"
+    }
+  ],
+  "findings": []
+}

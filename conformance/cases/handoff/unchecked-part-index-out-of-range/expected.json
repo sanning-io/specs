@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "part_index_out_of_range",
+  "at": "/metadata/handoff/unchecked_held_parts/0",
+  "reasons": [
+    {
+      "reason": "part_index_out_of_range",
+      "at": "/metadata/handoff/unchecked_held_parts/0"
+    }
+  ],
+  "findings": []
+}

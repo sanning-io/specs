@@ -1,0 +1,60 @@
+{
+  "event_id": "6faef0d1-4116-4dfd-b980-b81aba4f3653",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "agent.step.occurred",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a",
+      "name": "quote-agent"
+    },
+    "previous_hash": "71547e237559add83f6c9279fdb5762eafee857a1060e2d97c0316a70cefb6ba",
+    "event": {
+      "content_hash": "4477d0a89485da33ff4399677fd4dcb6242ee0c6891ca7f90e2ebf0bdeb8cacd",
+      "content_length": 84,
+      "ref": "s3+opaque:fd639acb8c997ba85c088c16bb41d3fe14fcb0f914b28d46ef60304d8409c0fb"
+    },
+    "context": {
+      "data_mode": "private",
+      "salt": "6ce825f8b974f9a533e38febe712f4da",
+      "case_id": "case-0001",
+      "chain_key": "chain-quote-agent",
+      "content_scrubbed": true
+    },
+    "metadata": {
+      "run": {
+        "run_id": "329324b3-a123-4bda-9c0c-33f9bc9a9d1a",
+        "parent_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "root_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "seq": 18,
+        "prev_event_id": "d1a865c8-e78f-44aa-8bb5-acb0294892b1",
+        "source_type": "langchain.agent_action",
+        "name": "plan_node",
+        "plumbing": true,
+        "zz_unknown": true
+      },
+      "otel": {
+        "scope": {
+          "name": "@sanning/anchor-langchain",
+          "version": "1.0.0",
+          "schema_url": "https://opentelemetry.io/schemas/1.41.0"
+        },
+        "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+        "span_id": "00f067aa0ba902b7"
+      },
+      "gen_ai": {
+        "agent": {
+          "version": "2.3.0"
+        },
+        "conversation": {
+          "id": "thread-0001"
+        }
+      }
+    },
+    "extras": {
+      "event_schema": "sanning.agent/1"
+    }
+  }
+}

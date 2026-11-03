@@ -1,0 +1,7 @@
+{
+  "valid": true,
+  "verdict": "verified",
+  "findings": [
+    "closing_not_held"
+  ]
+}

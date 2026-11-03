@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "unknown_field",
+  "at": "/context/hidden/gen_ai.tool.call.id",
+  "reasons": [
+    {
+      "reason": "unknown_field",
+      "at": "/context/hidden/gen_ai.tool.call.id"
+    }
+  ],
+  "findings": []
+}

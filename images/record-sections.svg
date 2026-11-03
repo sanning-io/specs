@@ -1,0 +1,43 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img"
+   aria-label="The sections of one event record and the document that defines each. The core, payload_version, spec_version, event_type, subject and previous_hash, is defined by events.md section 3, and the closed set of types by agent-events.md section 3. The event section, what the record commits to, by agent-events.md section 4.2, and for hand-offs also by agent-events.md section 8. The context section, the data mode, the salt, the case, the chain key and the disclosure lists, by agent-events.md section 4.3 and events.md section 3. The metadata section, the clear fields, by agent-events.md sections 4.4 to 5. The extras section, the vocabulary version, by agent-events.md section 2. The SHA-256 of the record's JCS bytes is the envelope's payload_hash.">
+<style>
+  .lbl  { font-family:"Geist",sans-serif; font-size:12px; font-weight:500; fill:#16181D; }
+  .sub  { font-family:"Geist Mono",monospace; font-size:9px; letter-spacing:.03em; fill:#5D636B; }
+  .zone { font-family:"Geist Mono",monospace; font-size:8.6px; letter-spacing:.13em; fill:#8A9098; }
+  .step { font-family:"Geist Mono",monospace; font-size:9px; letter-spacing:.07em; fill:#2C2E6B; }
+  .acc  { font-family:"Geist",sans-serif; font-size:12px; font-weight:500; fill:#2C2E6B; }
+</style>
+<rect x="0" y="0" width="760" height="300" fill="#FFFFFF"/>
+<rect x="10" y="10" width="740" height="280" fill="none" stroke="#D8D8D2" stroke-width="1"/>
+<text class="zone" x="20" y="26" text-anchor="start">ONE EVENT RECORD</text>
+<text class="zone" x="540" y="26" text-anchor="start">defined in</text>
+<rect x="24" y="38" width="92" height="30" fill="none" stroke="#D8D8D2" stroke-width="1"/>
+<text class="acc" x="36" y="57" text-anchor="start">core</text>
+<text class="sub" x="130" y="57" text-anchor="start">payload_version, spec_version, event_type, subject, previous_hash</text>
+<line fill="none" x1="516" y1="53" x2="528" y2="53" stroke="#16181D" stroke-width="1"/>
+<text class="sub" x="540" y="52" text-anchor="start">events.md 3</text>
+<text class="sub" x="540" y="63" text-anchor="start">agent-events.md 3, the types</text>
+<rect x="24" y="82" width="92" height="30" fill="none" stroke="#D8D8D2" stroke-width="1"/>
+<text class="lbl" x="36" y="101" text-anchor="start">event</text>
+<text class="sub" x="130" y="101" text-anchor="start">what it commits to: content_hash, or the hand-off fields</text>
+<line fill="none" x1="516" y1="97" x2="528" y2="97" stroke="#16181D" stroke-width="1"/>
+<text class="sub" x="540" y="96" text-anchor="start">agent-events.md 4.2</text>
+<text class="sub" x="540" y="107" text-anchor="start">agent-events.md 8, hand-offs</text>
+<rect x="24" y="126" width="92" height="30" fill="none" stroke="#D8D8D2" stroke-width="1"/>
+<text class="lbl" x="36" y="145" text-anchor="start">context</text>
+<text class="sub" x="130" y="145" text-anchor="start">data mode, salt, case, chain key, what is hidden or revealed</text>
+<line fill="none" x1="516" y1="141" x2="528" y2="141" stroke="#16181D" stroke-width="1"/>
+<text class="sub" x="540" y="140" text-anchor="start">agent-events.md 4.3</text>
+<text class="sub" x="540" y="151" text-anchor="start">events.md 3</text>
+<rect x="24" y="170" width="92" height="30" fill="none" stroke="#D8D8D2" stroke-width="1"/>
+<text class="lbl" x="36" y="189" text-anchor="start">metadata</text>
+<text class="sub" x="130" y="189" text-anchor="start">the clear fields: run, gen_ai, outcome, approval, file</text>
+<line fill="none" x1="516" y1="185" x2="528" y2="185" stroke="#16181D" stroke-width="1"/>
+<text class="sub" x="540" y="189" text-anchor="start">agent-events.md 4.4 to 5</text>
+<rect x="24" y="214" width="92" height="30" fill="none" stroke="#D8D8D2" stroke-width="1"/>
+<text class="lbl" x="36" y="233" text-anchor="start">extras</text>
+<text class="sub" x="130" y="233" text-anchor="start">event_schema, the vocabulary version</text>
+<line fill="none" x1="516" y1="229" x2="528" y2="229" stroke="#16181D" stroke-width="1"/>
+<text class="sub" x="540" y="233" text-anchor="start">agent-events.md 2</text>
+<text class="sub" x="24" y="276" text-anchor="start">SHA-256 of the record's JCS bytes is the envelope's payload_hash (events.md 3)</text>
+</svg>

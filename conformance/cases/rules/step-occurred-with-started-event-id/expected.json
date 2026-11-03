@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "unknown_field",
+  "at": "/metadata/run/started_event_id",
+  "reasons": [
+    {
+      "reason": "unknown_field",
+      "at": "/metadata/run/started_event_id"
+    }
+  ],
+  "findings": []
+}

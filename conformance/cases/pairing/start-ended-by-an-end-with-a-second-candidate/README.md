@@ -1,0 +1,1 @@
+A start and its end, beside a record of another type under the same key and the start's event_id: the end reads failed against that record, and still ends this start, because an end is graded against each start on its own. The held record at run.seq 4 shows a gap before this start.

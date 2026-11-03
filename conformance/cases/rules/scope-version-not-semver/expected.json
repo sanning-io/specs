@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "bad_value",
+  "at": "/metadata/otel/scope/version",
+  "reasons": [
+    {
+      "reason": "bad_value",
+      "at": "/metadata/otel/scope/version"
+    }
+  ],
+  "findings": []
+}

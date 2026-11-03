@@ -1,0 +1,12 @@
+{
+  "parts": [
+    {
+      "text": "Quote EUR for case-0001."
+    },
+    {
+      "kind": "file",
+      "content_hash": "ff8149a11c76e97dd32a9f75facca3de6dbdb8dca545a35fee5e25936b4a4ad6",
+      "content_length": 18342
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "hidden_field_present",
+  "at": "/metadata/gen_ai/tool/name",
+  "reasons": [
+    {
+      "reason": "hidden_field_present",
+      "at": "/metadata/gen_ai/tool/name"
+    }
+  ],
+  "findings": []
+}

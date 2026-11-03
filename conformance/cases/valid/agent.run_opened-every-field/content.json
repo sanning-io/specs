@@ -1,0 +1,20 @@
+{
+  "authority": {
+    "expires_at": "2026-10-27T18:00:00Z",
+    "principal": {
+      "subject": "user-0042"
+    },
+    "scope": [
+      "rates:read",
+      "quotes:write"
+    ]
+  },
+  "input": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Quote EUR."
+      }
+    ]
+  }
+}

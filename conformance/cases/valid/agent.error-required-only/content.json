@@ -1,0 +1,4 @@
+{
+  "message": "429 from provider",
+  "type": "RateLimitError"
+}

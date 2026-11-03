@@ -1,0 +1,45 @@
+{
+  "event_id": "736bed8b-8dc3-4a57-947e-4bdd3b4824bd",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "agent.step.started",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a"
+    },
+    "previous_hash": "GENESIS",
+    "event": {
+      "content_hash": "2e73c0a9030f28a31d53b67c803121b746ce70651ece9d78f4ab496292052aa4"
+    },
+    "context": {
+      "data_mode": "secret",
+      "salt": "6ada9c1c22e87606ddbf1549888ed15c"
+    },
+    "metadata": {
+      "run": {
+        "run_id": "329324b3-a123-4bda-9c0c-33f9bc9a9d1a",
+        "parent_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "root_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "seq": 2,
+        "prev_event_id": "4670052e-67e7-4ba9-9796-81183abee0b0"
+      },
+      "otel": {
+        "scope": {
+          "name": "@sanning/anchor-langchain",
+          "version": "1.0.0",
+          "schema_url": "https://opentelemetry.io/schemas/1.41.0"
+        }
+      },
+      "gen_ai": {
+        "conversation": {
+          "id": "alice@example.com"
+        }
+      }
+    },
+    "extras": {
+      "event_schema": "sanning.agent/1"
+    }
+  }
+}

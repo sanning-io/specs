@@ -1,0 +1,19 @@
+{
+  "name": "sanning-specs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "The sanning.agent/1 vocabulary of records an AI agent writes, the sanning.events/v2 profile that carries them, their JSON Schemas and their conformance cases.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "test": "node scripts/check.mjs",
+    "mutate": "node scripts/mutate.mjs"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0"
+  }
+}

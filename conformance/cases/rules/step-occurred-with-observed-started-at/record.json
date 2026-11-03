@@ -1,0 +1,42 @@
+{
+  "event_id": "6faef0d1-4116-4dfd-b980-b81aba4f3653",
+  "public_key": "9c0735cc64e7568004e105acb5ce048ac4f23f1b83fb492a42faa5d5bf16a886",
+  "record": {
+    "payload_version": 1,
+    "spec_version": "sanning.events/v2",
+    "event_type": "agent.step.occurred",
+    "subject": {
+      "type": "agent",
+      "agent_id": "agent-a"
+    },
+    "previous_hash": "GENESIS",
+    "event": {
+      "content_hash": "4477d0a89485da33ff4399677fd4dcb6242ee0c6891ca7f90e2ebf0bdeb8cacd"
+    },
+    "context": {
+      "data_mode": "private",
+      "salt": "318002fad05aeafa0afa7dba06f99539"
+    },
+    "metadata": {
+      "run": {
+        "run_id": "329324b3-a123-4bda-9c0c-33f9bc9a9d1a",
+        "parent_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "root_run_id": "de0630dd-5fa5-40de-af8d-d84cbbdc7440",
+        "seq": 18,
+        "prev_event_id": "d1a865c8-e78f-44aa-8bb5-acb0294892b1",
+        "source_type": "langchain.agent_action",
+        "observed_started_at": "2026-10-27T09:30:00.125Z"
+      },
+      "otel": {
+        "scope": {
+          "name": "@sanning/anchor-langchain",
+          "version": "1.0.0",
+          "schema_url": "https://opentelemetry.io/schemas/1.41.0"
+        }
+      }
+    },
+    "extras": {
+      "event_schema": "sanning.agent/1"
+    }
+  }
+}

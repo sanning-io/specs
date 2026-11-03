@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "missing_field",
+  "at": "/metadata/approval",
+  "reasons": [
+    {
+      "reason": "missing_field",
+      "at": "/metadata/approval"
+    }
+  ],
+  "findings": []
+}

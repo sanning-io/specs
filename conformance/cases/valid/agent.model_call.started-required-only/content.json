@@ -1,0 +1,14 @@
+{
+  "messages": [
+    [
+      {
+        "role": "user",
+        "content": "Quote EUR."
+      }
+    ]
+  ],
+  "invocation_params": {
+    "model": "gpt-4o-mini",
+    "openai_api_key": "sk-test-0001"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "hidden_field_present",
+  "at": "/metadata/artifact/path",
+  "reasons": [
+    {
+      "reason": "hidden_field_present",
+      "at": "/metadata/artifact/path"
+    }
+  ],
+  "findings": []
+}

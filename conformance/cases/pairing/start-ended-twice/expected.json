@@ -1,0 +1,7 @@
+{
+  "valid": true,
+  "verdict": "verified",
+  "findings": [
+    "ended_more_than_once"
+  ]
+}

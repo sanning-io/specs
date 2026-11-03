@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "missing_field",
+  "at": "/metadata/run/prev_event_id",
+  "reasons": [
+    {
+      "reason": "missing_field",
+      "at": "/metadata/run/prev_event_id"
+    }
+  ],
+  "findings": []
+}

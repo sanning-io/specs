@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "verdict": "failed",
+  "reason": "pair_run_mismatch",
+  "at": "/metadata/run/started_event_id",
+  "reasons": [
+    {
+      "reason": "pair_run_mismatch",
+      "at": "/metadata/run/started_event_id"
+    }
+  ],
+  "findings": [
+    "ran_after_refusal"
+  ]
+}

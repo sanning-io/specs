@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "missing_field",
+  "at": "/metadata/closing/record_count",
+  "reasons": [
+    {
+      "reason": "missing_field",
+      "at": "/metadata/closing/record_count"
+    }
+  ],
+  "findings": []
+}

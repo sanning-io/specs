@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "event_schema_misplaced",
+  "at": "/extras/event_schema",
+  "reasons": [
+    {
+      "reason": "event_schema_misplaced",
+      "at": "/extras/event_schema"
+    }
+  ],
+  "findings": []
+}

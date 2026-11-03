@@ -1,0 +1,15 @@
+{
+  "authority": {
+    "expires_at": null,
+    "principal": null,
+    "scope": null
+  },
+  "input": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Quote EUR."
+      }
+    ]
+  }
+}

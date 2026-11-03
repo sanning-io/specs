@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "unknown_field",
+  "at": "/metadata/handoff/zz_unknown",
+  "reasons": [
+    {
+      "reason": "unknown_field",
+      "at": "/metadata/handoff/zz_unknown"
+    }
+  ],
+  "findings": []
+}

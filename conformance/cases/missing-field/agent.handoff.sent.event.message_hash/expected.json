@@ -1,0 +1,13 @@
+{
+  "valid": false,
+  "verdict": "failed",
+  "reason": "missing_field",
+  "at": "/event/message_hash",
+  "reasons": [
+    {
+      "reason": "missing_field",
+      "at": "/event/message_hash"
+    }
+  ],
+  "findings": []
+}
