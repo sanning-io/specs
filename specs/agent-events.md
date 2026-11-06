@@ -578,6 +578,8 @@ Only the receiver knows which bytes it held. A receiver that omits both the list
 
 ### 8.2 The message and its parts
 
+This section and section 8.3 summarize the hand-off rules of the `sanning.events/v2` profile for a reader of this vocabulary. The profile states them in section 4.1 of the [envelope specification](https://github.com/sanning-io/proof/blob/v0.20.0/specs/envelope-spec.md) in `sanning-io/proof`, and where the two differ, that section governs. The cases that pin them are in [`test-vectors/handoff/`](https://github.com/sanning-io/proof/tree/v0.20.0/test-vectors/handoff) in the same repository. The cases in this repository pin only the part counts of section 8.1.
+
 `event.message_hash` is SHA-256 over the JCS (RFC 8785) bytes of the message object. It is canonical rather than raw, so a transport that parses and re-serializes JSON does not fail an honest hand-off. A file travels in a message as a file part, committed by its own hash inside that object, so a hand-off is not limited to JSON.
 
 **Where the parts are.** The parts of a message are the members of the message object's top-level `parts` array, in order. A message with no `parts` member, or with `"parts": null`, has no parts. A `parts` value that is present, not `null` and not an array gives the result `parts_not_an_array`, and nothing in it is checked.
@@ -640,6 +642,8 @@ A receiver reports one result per part, in the order of `parts`, and any message
 **What hashing the bytes does not establish.** A receiver always chooses what its own record commits to, so a receiver that wants to accuse an honest sender can write a `message_hash` of its own making. Hashing the bytes changes only what an honest receiver does. A rejection from a receiver that lies and one from a receiver that hashed the bytes it held look alike to a reader of the receiver's record alone.
 
 ### 8.3 Pairing a hand-off
+
+Section 4.1 of the [envelope specification](https://github.com/sanning-io/proof/blob/v0.20.0/specs/envelope-spec.md) governs this section (section 8.2).
 
 A *hand-off reader* reads the hand-off records a verifier holds, pairs them, and grades each pair. These rules decide which records pair and how a pair reads. Throughout, the party being audited writes every value inside its own records, so no value a record states about itself decides whether that record is read or which record it pairs with.
 
@@ -718,7 +722,7 @@ No case in this repository pins a hand-off reading. The cases pin each hand-off 
 
 ### 8.4 Records outside this vocabulary
 
-The four `runner.*` types (`runner.run_opened`, `runner.run_closed`, `runner.egress`, `runner.relay`) are record types defined outside this vocabulary, and this layer reads only their `extras` and salt (section 10, step 1). An agent can name a `runner.run_opened` record it was handed in `run.runner_event_id` on its `agent.run_opened`. That link is the agent's claim: an agent can leave it out or name a record it signed itself, and no step of section 10 reads anything beside it.
+The four `runner.*` types (`runner.run_opened`, `runner.run_closed`, `runner.egress`, `runner.relay`) are reserved: the profile names them so the set of types is closed, and does not define them (`events.md` section 4). This layer reads only their `extras` and salt (section 10, step 1). An agent can name a `runner.run_opened` record it was handed in `run.runner_event_id` on its `agent.run_opened`. That link is the agent's claim: an agent can leave it out or name a record it signed itself, and no step of section 10 reads anything beside it.
 
 ## 9. The three rules
 

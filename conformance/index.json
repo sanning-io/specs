@@ -1,0 +1,2542 @@
+[
+  {
+    "case": "valid/agent.run_opened-required-only",
+    "about": "An agent.run_opened record with only its required fields."
+  },
+  {
+    "case": "valid/agent.run_opened-every-field",
+    "about": "An agent.run_opened record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.run_closed-required-only",
+    "about": "An agent.run_closed record with only its required fields."
+  },
+  {
+    "case": "valid/agent.run_closed-every-field",
+    "about": "An agent.run_closed record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.step.started-required-only",
+    "about": "An agent.step.started record with only its required fields."
+  },
+  {
+    "case": "valid/agent.step.started-every-field",
+    "about": "An agent.step.started record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.step.ended-required-only",
+    "about": "An agent.step.ended record with only its required fields."
+  },
+  {
+    "case": "valid/agent.step.ended-every-field",
+    "about": "An agent.step.ended record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.model_call.started-required-only",
+    "about": "An agent.model_call.started record with only its required fields."
+  },
+  {
+    "case": "valid/agent.model_call.started-every-field",
+    "about": "An agent.model_call.started record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.model_call.ended-required-only",
+    "about": "An agent.model_call.ended record with only its required fields."
+  },
+  {
+    "case": "valid/agent.model_call.ended-every-field",
+    "about": "An agent.model_call.ended record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.tool_call.started-required-only",
+    "about": "An agent.tool_call.started record with only its required fields."
+  },
+  {
+    "case": "valid/agent.tool_call.started-every-field",
+    "about": "An agent.tool_call.started record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.tool_call.ended-required-only",
+    "about": "An agent.tool_call.ended record with only its required fields."
+  },
+  {
+    "case": "valid/agent.tool_call.ended-every-field",
+    "about": "An agent.tool_call.ended record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.retrieval.started-required-only",
+    "about": "An agent.retrieval.started record with only its required fields."
+  },
+  {
+    "case": "valid/agent.retrieval.started-every-field",
+    "about": "An agent.retrieval.started record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.retrieval.ended-required-only",
+    "about": "An agent.retrieval.ended record with only its required fields."
+  },
+  {
+    "case": "valid/agent.retrieval.ended-every-field",
+    "about": "An agent.retrieval.ended record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.approval.requested-required-only",
+    "about": "An agent.approval.requested record with only its required fields."
+  },
+  {
+    "case": "valid/agent.approval.requested-every-field",
+    "about": "An agent.approval.requested record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.approval.resolved-required-only",
+    "about": "An agent.approval.resolved record with only its required fields."
+  },
+  {
+    "case": "valid/agent.approval.resolved-every-field",
+    "about": "An agent.approval.resolved record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.handoff.sent-required-only",
+    "about": "An agent.handoff.sent record with only its required fields."
+  },
+  {
+    "case": "valid/agent.handoff.sent-every-field",
+    "about": "An agent.handoff.sent record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.handoff.received-required-only",
+    "about": "An agent.handoff.received record with only its required fields."
+  },
+  {
+    "case": "valid/agent.handoff.received-every-field",
+    "about": "An agent.handoff.received record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.decision-required-only",
+    "about": "An agent.decision record with only its required fields."
+  },
+  {
+    "case": "valid/agent.decision-every-field",
+    "about": "An agent.decision record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.custom-required-only",
+    "about": "An agent.custom record with only its required fields."
+  },
+  {
+    "case": "valid/agent.custom-every-field",
+    "about": "An agent.custom record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.file-required-only",
+    "about": "An agent.file record with only its required fields."
+  },
+  {
+    "case": "valid/agent.file-every-field",
+    "about": "An agent.file record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.error-required-only",
+    "about": "An agent.error record with only its required fields."
+  },
+  {
+    "case": "valid/agent.error-every-field",
+    "about": "An agent.error record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "valid/agent.step.occurred-required-only",
+    "about": "An agent.step.occurred record with only its required fields."
+  },
+  {
+    "case": "valid/agent.step.occurred-every-field",
+    "about": "An agent.step.occurred record with every field it can carry, revealed fields listed."
+  },
+  {
+    "case": "pairing/agent.step.ended-names-its-start",
+    "about": "agent.step.ended names the agent.step.started the reader holds."
+  },
+  {
+    "case": "pairing/agent.step.started-is-ended",
+    "about": "agent.step.started with the agent.step.ended that ends it."
+  },
+  {
+    "case": "pairing/agent.model_call.ended-names-its-start",
+    "about": "agent.model_call.ended names the agent.model_call.started the reader holds."
+  },
+  {
+    "case": "pairing/agent.model_call.started-is-ended",
+    "about": "agent.model_call.started with the agent.model_call.ended that ends it."
+  },
+  {
+    "case": "pairing/agent.tool_call.ended-names-its-start",
+    "about": "agent.tool_call.ended names the agent.tool_call.started the reader holds."
+  },
+  {
+    "case": "pairing/agent.tool_call.started-is-ended",
+    "about": "agent.tool_call.started with the agent.tool_call.ended that ends it."
+  },
+  {
+    "case": "pairing/agent.retrieval.ended-names-its-start",
+    "about": "agent.retrieval.ended names the agent.retrieval.started the reader holds."
+  },
+  {
+    "case": "pairing/agent.retrieval.started-is-ended",
+    "about": "agent.retrieval.started with the agent.retrieval.ended that ends it."
+  },
+  {
+    "case": "pairing/agent.approval.resolved-names-its-start",
+    "about": "agent.approval.resolved names the agent.approval.requested the reader holds."
+  },
+  {
+    "case": "pairing/agent.approval.requested-is-ended",
+    "about": "agent.approval.requested with the agent.approval.resolved that ends it."
+  },
+  {
+    "case": "pairing/start-with-no-end",
+    "about": "A tool call started and no record ends it: an operation that never finished."
+  },
+  {
+    "case": "pairing/end-with-start-not-held",
+    "about": "A tool call ended and the reader does not hold its start."
+  },
+  {
+    "case": "pairing/end-names-a-start-another-key-signed",
+    "about": "The only record under the event_id the end names was signed by another key: it is not a candidate, and the end reads its start absent."
+  },
+  {
+    "case": "pairing/end-names-a-start-of-another-type",
+    "about": "A tool call end names a model call start."
+  },
+  {
+    "case": "pairing/end-names-a-start-of-another-run",
+    "about": "A tool call end names the start of a different tool call."
+  },
+  {
+    "case": "pairing/start-ended-twice",
+    "about": "One tool call start and two records that end it."
+  },
+  {
+    "case": "pairing/end-names-a-start-of-another-tool-call-id",
+    "about": "A tool call end names a start that carries another gen_ai.tool.call.id."
+  },
+  {
+    "case": "pairing/approval-resolved-in-a-later-run",
+    "about": "An approval requested before an interrupt and resolved in the resumed run: two root runs, one conversation."
+  },
+  {
+    "case": "pairing/approval-requested-resolved-in-a-later-run",
+    "about": "The same approval read from the request: the resolution in the resumed run ends it."
+  },
+  {
+    "case": "pairing/approval-resolved-in-another-run-without-a-conversation",
+    "about": "An approval resolved in another run, with no conversation id to tie the two runs."
+  },
+  {
+    "case": "pairing/approval-in-two-runs-neither-names-a-conversation",
+    "about": "An approval requested and resolved in two runs, neither record naming a conversation: two absent ids do not tie two runs."
+  },
+  {
+    "case": "rules/run-closed-interrupted",
+    "about": "A run that ended on an interrupt closes as interrupted, never completed."
+  },
+  {
+    "case": "rules/step-ended-interrupted",
+    "about": "The graph node that called interrupt ends as interrupted."
+  },
+  {
+    "case": "rules/plumbing-marked",
+    "about": "A framework plumbing step, kept and marked: readers fold it by default."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.record",
+    "about": "agent.run_opened: an unknown field at /."
+  },
+  {
+    "case": "missing-field/agent.run_opened.payload_version",
+    "about": "agent.run_opened: the required field /payload_version is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.spec_version",
+    "about": "agent.run_opened: the required field /spec_version is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.subject",
+    "about": "agent.run_opened: the required field /subject is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.previous_hash",
+    "about": "agent.run_opened: the required field /previous_hash is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.event",
+    "about": "agent.run_opened: the required field /event is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.context",
+    "about": "agent.run_opened: the required field /context is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata",
+    "about": "agent.run_opened: the required field /metadata is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.subject",
+    "about": "agent.run_opened: an unknown field at /subject."
+  },
+  {
+    "case": "missing-field/agent.run_opened.subject.type",
+    "about": "agent.run_opened: the required field /subject/type is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.event",
+    "about": "agent.run_opened: an unknown field at /event."
+  },
+  {
+    "case": "missing-field/agent.run_opened.event.content_hash",
+    "about": "agent.run_opened: the required field /event/content_hash is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.context",
+    "about": "agent.run_opened: an unknown field at /context."
+  },
+  {
+    "case": "missing-field/agent.run_opened.context.data_mode",
+    "about": "agent.run_opened: the required field /context/data_mode is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.metadata",
+    "about": "agent.run_opened: an unknown field at /metadata."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.run",
+    "about": "agent.run_opened: the required field /metadata/run is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.otel",
+    "about": "agent.run_opened: the required field /metadata/otel is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.gen_ai",
+    "about": "agent.run_opened: the required field /metadata/gen_ai is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.closing",
+    "about": "agent.run_opened: the required field /metadata/closing is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.metadata.run",
+    "about": "agent.run_opened: an unknown field at /metadata/run."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.run.run_id",
+    "about": "agent.run_opened: the required field /metadata/run/run_id is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.run.parent_run_id",
+    "about": "agent.run_opened: the required field /metadata/run/parent_run_id is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.run.root_run_id",
+    "about": "agent.run_opened: the required field /metadata/run/root_run_id is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.run.seq",
+    "about": "agent.run_opened: the required field /metadata/run/seq is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.run.prev_event_id",
+    "about": "agent.run_opened: the required field /metadata/run/prev_event_id is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.metadata.otel",
+    "about": "agent.run_opened: an unknown field at /metadata/otel."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.otel.scope",
+    "about": "agent.run_opened: the required field /metadata/otel/scope is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.metadata.otel.scope",
+    "about": "agent.run_opened: an unknown field at /metadata/otel/scope."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.otel.scope.name",
+    "about": "agent.run_opened: the required field /metadata/otel/scope/name is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.otel.scope.version",
+    "about": "agent.run_opened: the required field /metadata/otel/scope/version is missing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.otel.scope.schema_url",
+    "about": "agent.run_opened: the required field /metadata/otel/scope/schema_url is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.metadata.gen_ai",
+    "about": "agent.run_opened: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.gen_ai.operation",
+    "about": "agent.run_opened: the required field /metadata/gen_ai/operation is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.metadata.gen_ai.operation",
+    "about": "agent.run_opened: an unknown field at /metadata/gen_ai/operation."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.gen_ai.operation.name",
+    "about": "agent.run_opened: the required field /metadata/gen_ai/operation/name is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.metadata.gen_ai.agent",
+    "about": "agent.run_opened: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.gen_ai.agent.version",
+    "about": "agent.run_opened: the required field /metadata/gen_ai/agent/version is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.metadata.gen_ai.conversation",
+    "about": "agent.run_opened: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.gen_ai.conversation.id",
+    "about": "agent.run_opened: the required field /metadata/gen_ai/conversation/id is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.metadata.capture",
+    "about": "agent.run_opened: an unknown field at /metadata/capture."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.capture.not_captured",
+    "about": "agent.run_opened: the required field /metadata/capture/not_captured is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.metadata.closing",
+    "about": "agent.run_opened: an unknown field at /metadata/closing."
+  },
+  {
+    "case": "missing-field/agent.run_opened.metadata.closing.promised",
+    "about": "agent.run_opened: the required field /metadata/closing/promised is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.metadata.authority",
+    "about": "agent.run_opened: an unknown field at /metadata/authority."
+  },
+  {
+    "case": "unknown-field/agent.run_opened.extras",
+    "about": "agent.run_opened: an unknown field at /extras."
+  },
+  {
+    "case": "unknown-field/agent.run_closed.record",
+    "about": "agent.run_closed: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.run_closed.context",
+    "about": "agent.run_closed: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.run_closed.metadata",
+    "about": "agent.run_closed: an unknown field at /metadata."
+  },
+  {
+    "case": "unknown-field/agent.run_closed.metadata.run",
+    "about": "agent.run_closed: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.run_closed.metadata.gen_ai",
+    "about": "agent.run_closed: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.run_closed.metadata.gen_ai.operation",
+    "about": "agent.run_closed: an unknown field at /metadata/gen_ai/operation."
+  },
+  {
+    "case": "unknown-field/agent.run_closed.metadata.gen_ai.agent",
+    "about": "agent.run_closed: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.run_closed.metadata.gen_ai.conversation",
+    "about": "agent.run_closed: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.run_closed.metadata.closing",
+    "about": "agent.run_closed: an unknown field at /metadata/closing."
+  },
+  {
+    "case": "missing-field/agent.run_closed.metadata.closing.record_count",
+    "about": "agent.run_closed: the required field /metadata/closing/record_count is missing."
+  },
+  {
+    "case": "missing-field/agent.run_closed.metadata.closing.record_ids",
+    "about": "agent.run_closed: the required field /metadata/closing/record_ids is missing."
+  },
+  {
+    "case": "missing-field/agent.run_closed.metadata.closing.outcome",
+    "about": "agent.run_closed: the required field /metadata/closing/outcome is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_closed.metadata.closing.outcome",
+    "about": "agent.run_closed: an unknown field at /metadata/closing/outcome."
+  },
+  {
+    "case": "missing-field/agent.run_closed.metadata.closing.outcome.observed",
+    "about": "agent.run_closed: the required field /metadata/closing/outcome/observed is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_closed.metadata.closing.outcome.observed",
+    "about": "agent.run_closed: an unknown field at /metadata/closing/outcome/observed."
+  },
+  {
+    "case": "missing-field/agent.run_closed.metadata.closing.outcome.observed.status",
+    "about": "agent.run_closed: the required field /metadata/closing/outcome/observed/status is missing."
+  },
+  {
+    "case": "unknown-field/agent.run_closed.metadata.closing.outcome.stated",
+    "about": "agent.run_closed: an unknown field at /metadata/closing/outcome/stated."
+  },
+  {
+    "case": "missing-field/agent.run_closed.metadata.closing.outcome.stated.status",
+    "about": "agent.run_closed: the required field /metadata/closing/outcome/stated/status is missing."
+  },
+  {
+    "case": "unknown-field/agent.step.started.record",
+    "about": "agent.step.started: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.step.started.context",
+    "about": "agent.step.started: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.step.started.metadata",
+    "about": "agent.step.started: an unknown field at /metadata."
+  },
+  {
+    "case": "unknown-field/agent.step.started.metadata.run",
+    "about": "agent.step.started: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.step.started.metadata.gen_ai",
+    "about": "agent.step.started: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.step.started.metadata.gen_ai.agent",
+    "about": "agent.step.started: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.step.started.metadata.gen_ai.conversation",
+    "about": "agent.step.started: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.step.ended.record",
+    "about": "agent.step.ended: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.step.ended.context",
+    "about": "agent.step.ended: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.step.ended.metadata",
+    "about": "agent.step.ended: an unknown field at /metadata."
+  },
+  {
+    "case": "missing-field/agent.step.ended.metadata.outcome",
+    "about": "agent.step.ended: the required field /metadata/outcome is missing."
+  },
+  {
+    "case": "unknown-field/agent.step.ended.metadata.run",
+    "about": "agent.step.ended: an unknown field at /metadata/run."
+  },
+  {
+    "case": "missing-field/agent.step.ended.metadata.run.started_event_id",
+    "about": "agent.step.ended: the required field /metadata/run/started_event_id is missing."
+  },
+  {
+    "case": "unknown-field/agent.step.ended.metadata.gen_ai",
+    "about": "agent.step.ended: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.step.ended.metadata.gen_ai.agent",
+    "about": "agent.step.ended: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.step.ended.metadata.gen_ai.conversation",
+    "about": "agent.step.ended: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.step.ended.metadata.outcome",
+    "about": "agent.step.ended: an unknown field at /metadata/outcome."
+  },
+  {
+    "case": "missing-field/agent.step.ended.metadata.outcome.status",
+    "about": "agent.step.ended: the required field /metadata/outcome/status is missing."
+  },
+  {
+    "case": "unknown-field/agent.step.ended.metadata.error",
+    "about": "agent.step.ended: an unknown field at /metadata/error."
+  },
+  {
+    "case": "missing-field/agent.step.ended.metadata.error.type",
+    "about": "agent.step.ended: the required field /metadata/error/type is missing."
+  },
+  {
+    "case": "unknown-field/agent.step.ended.metadata.exception",
+    "about": "agent.step.ended: an unknown field at /metadata/exception."
+  },
+  {
+    "case": "unknown-field/agent.model_call.started.record",
+    "about": "agent.model_call.started: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.model_call.started.context",
+    "about": "agent.model_call.started: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.model_call.started.metadata",
+    "about": "agent.model_call.started: an unknown field at /metadata."
+  },
+  {
+    "case": "unknown-field/agent.model_call.started.metadata.run",
+    "about": "agent.model_call.started: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.model_call.started.metadata.gen_ai",
+    "about": "agent.model_call.started: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.model_call.started.metadata.gen_ai.operation",
+    "about": "agent.model_call.started: an unknown field at /metadata/gen_ai/operation."
+  },
+  {
+    "case": "unknown-field/agent.model_call.started.metadata.gen_ai.agent",
+    "about": "agent.model_call.started: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.model_call.started.metadata.gen_ai.conversation",
+    "about": "agent.model_call.started: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.model_call.started.metadata.gen_ai.request",
+    "about": "agent.model_call.started: an unknown field at /metadata/gen_ai/request."
+  },
+  {
+    "case": "unknown-field/agent.model_call.started.metadata.gen_ai.provider",
+    "about": "agent.model_call.started: an unknown field at /metadata/gen_ai/provider."
+  },
+  {
+    "case": "missing-field/agent.model_call.started.metadata.gen_ai.provider.name",
+    "about": "agent.model_call.started: the required field /metadata/gen_ai/provider/name is missing."
+  },
+  {
+    "case": "unknown-field/agent.model_call.started.metadata.gen_ai.prompt",
+    "about": "agent.model_call.started: an unknown field at /metadata/gen_ai/prompt."
+  },
+  {
+    "case": "unknown-field/agent.model_call.started.metadata.gen_ai.input",
+    "about": "agent.model_call.started: an unknown field at /metadata/gen_ai/input."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.record",
+    "about": "agent.model_call.ended: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.context",
+    "about": "agent.model_call.ended: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata",
+    "about": "agent.model_call.ended: an unknown field at /metadata."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.run",
+    "about": "agent.model_call.ended: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.gen_ai",
+    "about": "agent.model_call.ended: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.gen_ai.operation",
+    "about": "agent.model_call.ended: an unknown field at /metadata/gen_ai/operation."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.gen_ai.agent",
+    "about": "agent.model_call.ended: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.gen_ai.conversation",
+    "about": "agent.model_call.ended: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.gen_ai.provider",
+    "about": "agent.model_call.ended: an unknown field at /metadata/gen_ai/provider."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.gen_ai.response",
+    "about": "agent.model_call.ended: an unknown field at /metadata/gen_ai/response."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.gen_ai.usage",
+    "about": "agent.model_call.ended: an unknown field at /metadata/gen_ai/usage."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.gen_ai.usage.reasoning",
+    "about": "agent.model_call.ended: an unknown field at /metadata/gen_ai/usage/reasoning."
+  },
+  {
+    "case": "missing-field/agent.model_call.ended.metadata.gen_ai.usage.reasoning.output_tokens",
+    "about": "agent.model_call.ended: the required field /metadata/gen_ai/usage/reasoning/output_tokens is missing."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.gen_ai.output",
+    "about": "agent.model_call.ended: an unknown field at /metadata/gen_ai/output."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.outcome",
+    "about": "agent.model_call.ended: an unknown field at /metadata/outcome."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.error",
+    "about": "agent.model_call.ended: an unknown field at /metadata/error."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.exception",
+    "about": "agent.model_call.ended: an unknown field at /metadata/exception."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.openai",
+    "about": "agent.model_call.ended: an unknown field at /metadata/openai."
+  },
+  {
+    "case": "missing-field/agent.model_call.ended.metadata.openai.response",
+    "about": "agent.model_call.ended: the required field /metadata/openai/response is missing."
+  },
+  {
+    "case": "unknown-field/agent.model_call.ended.metadata.openai.response",
+    "about": "agent.model_call.ended: an unknown field at /metadata/openai/response."
+  },
+  {
+    "case": "missing-field/agent.model_call.ended.metadata.openai.response.system_fingerprint",
+    "about": "agent.model_call.ended: the required field /metadata/openai/response/system_fingerprint is missing."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.started.record",
+    "about": "agent.tool_call.started: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.started.context",
+    "about": "agent.tool_call.started: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.started.metadata",
+    "about": "agent.tool_call.started: an unknown field at /metadata."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.started.metadata.run",
+    "about": "agent.tool_call.started: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.started.metadata.gen_ai",
+    "about": "agent.tool_call.started: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "missing-field/agent.tool_call.started.metadata.gen_ai.tool",
+    "about": "agent.tool_call.started: the required field /metadata/gen_ai/tool is missing."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.started.metadata.gen_ai.operation",
+    "about": "agent.tool_call.started: an unknown field at /metadata/gen_ai/operation."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.started.metadata.gen_ai.agent",
+    "about": "agent.tool_call.started: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.started.metadata.gen_ai.conversation",
+    "about": "agent.tool_call.started: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.started.metadata.gen_ai.tool",
+    "about": "agent.tool_call.started: an unknown field at /metadata/gen_ai/tool."
+  },
+  {
+    "case": "missing-field/agent.tool_call.started.metadata.gen_ai.tool.call",
+    "about": "agent.tool_call.started: the required field /metadata/gen_ai/tool/call is missing."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.started.metadata.gen_ai.tool.call",
+    "about": "agent.tool_call.started: an unknown field at /metadata/gen_ai/tool/call."
+  },
+  {
+    "case": "missing-field/agent.tool_call.started.metadata.gen_ai.tool.call.id",
+    "about": "agent.tool_call.started: the required field /metadata/gen_ai/tool/call/id is missing."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.ended.record",
+    "about": "agent.tool_call.ended: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.ended.context",
+    "about": "agent.tool_call.ended: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.ended.metadata",
+    "about": "agent.tool_call.ended: an unknown field at /metadata."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.ended.metadata.run",
+    "about": "agent.tool_call.ended: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.ended.metadata.gen_ai",
+    "about": "agent.tool_call.ended: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.ended.metadata.gen_ai.operation",
+    "about": "agent.tool_call.ended: an unknown field at /metadata/gen_ai/operation."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.ended.metadata.gen_ai.agent",
+    "about": "agent.tool_call.ended: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.ended.metadata.gen_ai.conversation",
+    "about": "agent.tool_call.ended: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.ended.metadata.gen_ai.tool",
+    "about": "agent.tool_call.ended: an unknown field at /metadata/gen_ai/tool."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.ended.metadata.gen_ai.tool.call",
+    "about": "agent.tool_call.ended: an unknown field at /metadata/gen_ai/tool/call."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.ended.metadata.outcome",
+    "about": "agent.tool_call.ended: an unknown field at /metadata/outcome."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.ended.metadata.error",
+    "about": "agent.tool_call.ended: an unknown field at /metadata/error."
+  },
+  {
+    "case": "unknown-field/agent.tool_call.ended.metadata.exception",
+    "about": "agent.tool_call.ended: an unknown field at /metadata/exception."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.started.record",
+    "about": "agent.retrieval.started: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.started.context",
+    "about": "agent.retrieval.started: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.started.metadata",
+    "about": "agent.retrieval.started: an unknown field at /metadata."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.started.metadata.run",
+    "about": "agent.retrieval.started: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.started.metadata.gen_ai",
+    "about": "agent.retrieval.started: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.started.metadata.gen_ai.operation",
+    "about": "agent.retrieval.started: an unknown field at /metadata/gen_ai/operation."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.started.metadata.gen_ai.agent",
+    "about": "agent.retrieval.started: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.started.metadata.gen_ai.conversation",
+    "about": "agent.retrieval.started: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.started.metadata.gen_ai.retrieval",
+    "about": "agent.retrieval.started: an unknown field at /metadata/gen_ai/retrieval."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.started.metadata.gen_ai.retrieval.query",
+    "about": "agent.retrieval.started: an unknown field at /metadata/gen_ai/retrieval/query."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.ended.record",
+    "about": "agent.retrieval.ended: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.ended.context",
+    "about": "agent.retrieval.ended: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.ended.metadata",
+    "about": "agent.retrieval.ended: an unknown field at /metadata."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.ended.metadata.run",
+    "about": "agent.retrieval.ended: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.ended.metadata.gen_ai",
+    "about": "agent.retrieval.ended: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.ended.metadata.gen_ai.operation",
+    "about": "agent.retrieval.ended: an unknown field at /metadata/gen_ai/operation."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.ended.metadata.gen_ai.agent",
+    "about": "agent.retrieval.ended: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.ended.metadata.gen_ai.conversation",
+    "about": "agent.retrieval.ended: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.ended.metadata.gen_ai.retrieval",
+    "about": "agent.retrieval.ended: an unknown field at /metadata/gen_ai/retrieval."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.ended.metadata.outcome",
+    "about": "agent.retrieval.ended: an unknown field at /metadata/outcome."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.ended.metadata.error",
+    "about": "agent.retrieval.ended: an unknown field at /metadata/error."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.ended.metadata.exception",
+    "about": "agent.retrieval.ended: an unknown field at /metadata/exception."
+  },
+  {
+    "case": "unknown-field/agent.retrieval.ended.metadata.retrieval",
+    "about": "agent.retrieval.ended: an unknown field at /metadata/retrieval."
+  },
+  {
+    "case": "missing-field/agent.retrieval.ended.metadata.retrieval.document_count",
+    "about": "agent.retrieval.ended: the required field /metadata/retrieval/document_count is missing."
+  },
+  {
+    "case": "unknown-field/agent.approval.requested.record",
+    "about": "agent.approval.requested: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.approval.requested.context",
+    "about": "agent.approval.requested: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.approval.requested.metadata",
+    "about": "agent.approval.requested: an unknown field at /metadata."
+  },
+  {
+    "case": "missing-field/agent.approval.requested.metadata.approval",
+    "about": "agent.approval.requested: the required field /metadata/approval is missing."
+  },
+  {
+    "case": "unknown-field/agent.approval.requested.metadata.run",
+    "about": "agent.approval.requested: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.approval.requested.metadata.gen_ai",
+    "about": "agent.approval.requested: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.approval.requested.metadata.gen_ai.agent",
+    "about": "agent.approval.requested: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.approval.requested.metadata.gen_ai.conversation",
+    "about": "agent.approval.requested: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.approval.requested.metadata.approval",
+    "about": "agent.approval.requested: an unknown field at /metadata/approval."
+  },
+  {
+    "case": "missing-field/agent.approval.requested.metadata.approval.actor",
+    "about": "agent.approval.requested: the required field /metadata/approval/actor is missing."
+  },
+  {
+    "case": "missing-field/agent.approval.requested.metadata.approval.subject_event_id",
+    "about": "agent.approval.requested: the required field /metadata/approval/subject_event_id is missing."
+  },
+  {
+    "case": "unknown-field/agent.approval.resolved.record",
+    "about": "agent.approval.resolved: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.approval.resolved.context",
+    "about": "agent.approval.resolved: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.approval.resolved.metadata",
+    "about": "agent.approval.resolved: an unknown field at /metadata."
+  },
+  {
+    "case": "unknown-field/agent.approval.resolved.metadata.run",
+    "about": "agent.approval.resolved: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.approval.resolved.metadata.gen_ai",
+    "about": "agent.approval.resolved: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.approval.resolved.metadata.gen_ai.agent",
+    "about": "agent.approval.resolved: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.approval.resolved.metadata.gen_ai.conversation",
+    "about": "agent.approval.resolved: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.approval.resolved.metadata.approval",
+    "about": "agent.approval.resolved: an unknown field at /metadata/approval."
+  },
+  {
+    "case": "missing-field/agent.approval.resolved.metadata.approval.verdict",
+    "about": "agent.approval.resolved: the required field /metadata/approval/verdict is missing."
+  },
+  {
+    "case": "unknown-field/agent.handoff.sent.record",
+    "about": "agent.handoff.sent: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.handoff.sent.event",
+    "about": "agent.handoff.sent: an unknown field at /event."
+  },
+  {
+    "case": "missing-field/agent.handoff.sent.event.message_hash",
+    "about": "agent.handoff.sent: the required field /event/message_hash is missing."
+  },
+  {
+    "case": "missing-field/agent.handoff.sent.event.content_type",
+    "about": "agent.handoff.sent: the required field /event/content_type is missing."
+  },
+  {
+    "case": "missing-field/agent.handoff.sent.event.counterparty_public_key",
+    "about": "agent.handoff.sent: the required field /event/counterparty_public_key is missing."
+  },
+  {
+    "case": "missing-field/agent.handoff.sent.event.sequence",
+    "about": "agent.handoff.sent: the required field /event/sequence is missing."
+  },
+  {
+    "case": "unknown-field/agent.handoff.sent.context",
+    "about": "agent.handoff.sent: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.handoff.sent.metadata",
+    "about": "agent.handoff.sent: an unknown field at /metadata."
+  },
+  {
+    "case": "missing-field/agent.handoff.sent.metadata.handoff",
+    "about": "agent.handoff.sent: the required field /metadata/handoff is missing."
+  },
+  {
+    "case": "unknown-field/agent.handoff.sent.metadata.run",
+    "about": "agent.handoff.sent: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.handoff.sent.metadata.gen_ai",
+    "about": "agent.handoff.sent: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.handoff.sent.metadata.gen_ai.agent",
+    "about": "agent.handoff.sent: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.handoff.sent.metadata.gen_ai.conversation",
+    "about": "agent.handoff.sent: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.handoff.sent.metadata.handoff",
+    "about": "agent.handoff.sent: an unknown field at /metadata/handoff."
+  },
+  {
+    "case": "missing-field/agent.handoff.sent.metadata.handoff.parts",
+    "about": "agent.handoff.sent: the required field /metadata/handoff/parts is missing."
+  },
+  {
+    "case": "missing-field/agent.handoff.sent.metadata.handoff.file_parts",
+    "about": "agent.handoff.sent: the required field /metadata/handoff/file_parts is missing."
+  },
+  {
+    "case": "unknown-field/agent.handoff.received.record",
+    "about": "agent.handoff.received: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.handoff.received.event",
+    "about": "agent.handoff.received: an unknown field at /event."
+  },
+  {
+    "case": "missing-field/agent.handoff.received.event.outcome",
+    "about": "agent.handoff.received: the required field /event/outcome is missing."
+  },
+  {
+    "case": "unknown-field/agent.handoff.received.context",
+    "about": "agent.handoff.received: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.handoff.received.metadata",
+    "about": "agent.handoff.received: an unknown field at /metadata."
+  },
+  {
+    "case": "unknown-field/agent.handoff.received.metadata.run",
+    "about": "agent.handoff.received: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.handoff.received.metadata.gen_ai",
+    "about": "agent.handoff.received: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.handoff.received.metadata.gen_ai.agent",
+    "about": "agent.handoff.received: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.handoff.received.metadata.gen_ai.conversation",
+    "about": "agent.handoff.received: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.handoff.received.metadata.handoff",
+    "about": "agent.handoff.received: an unknown field at /metadata/handoff."
+  },
+  {
+    "case": "unknown-field/agent.decision.record",
+    "about": "agent.decision: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.decision.context",
+    "about": "agent.decision: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.decision.metadata",
+    "about": "agent.decision: an unknown field at /metadata."
+  },
+  {
+    "case": "missing-field/agent.decision.metadata.decision",
+    "about": "agent.decision: the required field /metadata/decision is missing."
+  },
+  {
+    "case": "unknown-field/agent.decision.metadata.run",
+    "about": "agent.decision: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.decision.metadata.gen_ai",
+    "about": "agent.decision: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.decision.metadata.gen_ai.agent",
+    "about": "agent.decision: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.decision.metadata.gen_ai.conversation",
+    "about": "agent.decision: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.decision.metadata.decision",
+    "about": "agent.decision: an unknown field at /metadata/decision."
+  },
+  {
+    "case": "missing-field/agent.decision.metadata.decision.name",
+    "about": "agent.decision: the required field /metadata/decision/name is missing."
+  },
+  {
+    "case": "unknown-field/agent.custom.record",
+    "about": "agent.custom: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.custom.context",
+    "about": "agent.custom: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.custom.metadata",
+    "about": "agent.custom: an unknown field at /metadata."
+  },
+  {
+    "case": "missing-field/agent.custom.metadata.custom",
+    "about": "agent.custom: the required field /metadata/custom is missing."
+  },
+  {
+    "case": "unknown-field/agent.custom.metadata.run",
+    "about": "agent.custom: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.custom.metadata.gen_ai",
+    "about": "agent.custom: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.custom.metadata.gen_ai.agent",
+    "about": "agent.custom: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.custom.metadata.gen_ai.conversation",
+    "about": "agent.custom: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.custom.metadata.custom",
+    "about": "agent.custom: an unknown field at /metadata/custom."
+  },
+  {
+    "case": "missing-field/agent.custom.metadata.custom.name",
+    "about": "agent.custom: the required field /metadata/custom/name is missing."
+  },
+  {
+    "case": "unknown-field/agent.file.record",
+    "about": "agent.file: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.file.context",
+    "about": "agent.file: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.file.metadata",
+    "about": "agent.file: an unknown field at /metadata."
+  },
+  {
+    "case": "unknown-field/agent.file.metadata.run",
+    "about": "agent.file: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.file.metadata.gen_ai",
+    "about": "agent.file: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.file.metadata.gen_ai.agent",
+    "about": "agent.file: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.file.metadata.gen_ai.conversation",
+    "about": "agent.file: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.file.metadata.outcome",
+    "about": "agent.file: an unknown field at /metadata/outcome."
+  },
+  {
+    "case": "unknown-field/agent.file.metadata.artifact",
+    "about": "agent.file: an unknown field at /metadata/artifact."
+  },
+  {
+    "case": "unknown-field/agent.error.record",
+    "about": "agent.error: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.error.context",
+    "about": "agent.error: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.error.metadata",
+    "about": "agent.error: an unknown field at /metadata."
+  },
+  {
+    "case": "missing-field/agent.error.metadata.error",
+    "about": "agent.error: the required field /metadata/error is missing."
+  },
+  {
+    "case": "unknown-field/agent.error.metadata.run",
+    "about": "agent.error: an unknown field at /metadata/run."
+  },
+  {
+    "case": "unknown-field/agent.error.metadata.gen_ai",
+    "about": "agent.error: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.error.metadata.gen_ai.agent",
+    "about": "agent.error: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.error.metadata.gen_ai.conversation",
+    "about": "agent.error: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "unknown-field/agent.error.metadata.error",
+    "about": "agent.error: an unknown field at /metadata/error."
+  },
+  {
+    "case": "unknown-field/agent.error.metadata.exception",
+    "about": "agent.error: an unknown field at /metadata/exception."
+  },
+  {
+    "case": "unknown-field/agent.step.occurred.record",
+    "about": "agent.step.occurred: an unknown field at /."
+  },
+  {
+    "case": "unknown-field/agent.step.occurred.context",
+    "about": "agent.step.occurred: an unknown field at /context."
+  },
+  {
+    "case": "unknown-field/agent.step.occurred.metadata",
+    "about": "agent.step.occurred: an unknown field at /metadata."
+  },
+  {
+    "case": "unknown-field/agent.step.occurred.metadata.run",
+    "about": "agent.step.occurred: an unknown field at /metadata/run."
+  },
+  {
+    "case": "missing-field/agent.step.occurred.metadata.run.source_type",
+    "about": "agent.step.occurred: the required field /metadata/run/source_type is missing."
+  },
+  {
+    "case": "unknown-field/agent.step.occurred.metadata.gen_ai",
+    "about": "agent.step.occurred: an unknown field at /metadata/gen_ai."
+  },
+  {
+    "case": "unknown-field/agent.step.occurred.metadata.gen_ai.agent",
+    "about": "agent.step.occurred: an unknown field at /metadata/gen_ai/agent."
+  },
+  {
+    "case": "unknown-field/agent.step.occurred.metadata.gen_ai.conversation",
+    "about": "agent.step.occurred: an unknown field at /metadata/gen_ai/conversation."
+  },
+  {
+    "case": "event-type/unknown-agent-type",
+    "about": "agent.plan.started is in the agent namespace and is not one of the 19 types."
+  },
+  {
+    "case": "event-type/builder-defined-type",
+    "about": "A builder-defined type, myapp.tool_call, is outside the closed set."
+  },
+  {
+    "case": "event-type/uppercase-agent-type",
+    "about": "AGENT.TOOL_CALL.STARTED is not a spelling of a type in the set: names compare exactly."
+  },
+  {
+    "case": "event-type/runner-record-is-not-an-agent-record",
+    "about": "A runner.egress record is in the closed set and outside this vocabulary: no verdict here."
+  },
+  {
+    "case": "event-type/event-schema-on-a-runner-record",
+    "about": "A runner.egress record that claims the agent vocabulary."
+  },
+  {
+    "case": "event-schema/unknown-major",
+    "about": "sanning.agent/2, a version this reader does not know: incomplete, never verified."
+  },
+  {
+    "case": "event-schema/unknown-minor",
+    "about": "sanning.agent/1.1, a later minor this reader does not know: incomplete, never verified."
+  },
+  {
+    "case": "event-schema/missing",
+    "about": "An agent record with no extras.event_schema."
+  },
+  {
+    "case": "event-schema/major-zero",
+    "about": "Major 0 is not a version: majors start at 1."
+  },
+  {
+    "case": "event-schema/major-leading-zero",
+    "about": "A leading zero is not a spelling of major 1."
+  },
+  {
+    "case": "event-schema/minor-zero",
+    "about": "Minor 0 is written as the bare major, sanning.agent/1: 1.0 is not a spelling of it."
+  },
+  {
+    "case": "event-schema/minor-leading-zero",
+    "about": "A leading zero in the minor is not a spelling."
+  },
+  {
+    "case": "event-schema/v-prefix",
+    "about": "A v before the major is not in the grammar."
+  },
+  {
+    "case": "event-schema/major-too-long",
+    "about": "A major of ten digits is outside the grammar."
+  },
+  {
+    "case": "event-schema/not-a-string",
+    "about": "The version is a string."
+  },
+  {
+    "case": "event-schema/unknown-minor-new-type",
+    "about": "agent.memory.read under sanning.agent/1.1: a type a later minor adds reads incomplete, never failed, because the version is read before the type."
+  },
+  {
+    "case": "event-schema/unknown-major-new-type",
+    "about": "agent.memory.read under sanning.agent/2: an unknown major reads incomplete whatever its type."
+  },
+  {
+    "case": "event-schema/unknown-type-known-version",
+    "about": "agent.memory.read under sanning.agent/1, a version this reader knows: the type is outside that version's set."
+  },
+  {
+    "case": "data-mode/private",
+    "about": "The same tool call start in private mode: the reading does not depend on the mode, and sent.json is what Sanning receives."
+  },
+  {
+    "case": "data-mode/standard",
+    "about": "The same tool call start in standard mode: the reading does not depend on the mode, and sent.json is what Sanning receives."
+  },
+  {
+    "case": "data-mode/full",
+    "about": "The same tool call start in full mode: the reading does not depend on the mode, and sent.json is what Sanning receives."
+  },
+  {
+    "case": "data-mode/not-a-mode",
+    "about": "data_mode public is not a mode."
+  },
+  {
+    "case": "disclosure/revealed-field-listed",
+    "about": "Tool arguments revealed in clear and listed in context.revealed."
+  },
+  {
+    "case": "disclosure/revealed-field-not-listed",
+    "about": "Tool arguments in clear with no context.revealed entry: a reader cannot tell a reveal from a leak."
+  },
+  {
+    "case": "disclosure/revealed-field-absent",
+    "about": "context.revealed lists tool arguments the record does not carry."
+  },
+  {
+    "case": "disclosure/revealed-path-not-revealable",
+    "about": "gen_ai.tool.name is a clear field, not a hash-only one: it cannot be listed as revealed."
+  },
+  {
+    "case": "disclosure/hidden-field-listed",
+    "about": "The tool name hidden: absent in clear, its hash listed in context.hidden."
+  },
+  {
+    "case": "disclosure/hidden-field-present",
+    "about": "The tool name listed as hidden and still present in clear."
+  },
+  {
+    "case": "disclosure/hidden-path-not-hidable",
+    "about": "gen_ai.tool.call.id is an id, never hidden."
+  },
+  {
+    "case": "disclosure/hidden-value-not-a-hash",
+    "about": "context.hidden carries the name itself instead of its hash."
+  },
+  {
+    "case": "disclosure/approver-revealed",
+    "about": "The approver's identity, hash-only by default, revealed and listed."
+  },
+  {
+    "case": "handoff/unchecked-parts-counted",
+    "about": "A received message with one file part held and not checked, and the count present."
+  },
+  {
+    "case": "handoff/unchecked-parts-count-missing",
+    "about": "The same record with context.unchecked_held_part_count missing."
+  },
+  {
+    "case": "handoff/unchecked-parts-count-wrong",
+    "about": "context.unchecked_held_part_count says 2 and the record lists one unchecked part."
+  },
+  {
+    "case": "handoff/unchecked-parts-zero",
+    "about": "A zero count is written by leaving the key out, never as 0."
+  },
+  {
+    "case": "handoff/url-part-held-and-counted",
+    "about": "A message whose one part is a url part; the receiver held the file behind it and did not check it, and counts it."
+  },
+  {
+    "case": "handoff/unchecked-part-index-out-of-range",
+    "about": "An unchecked part index past the end of the message's parts."
+  },
+  {
+    "case": "handoff/unchecked-parts-on-a-sent-record",
+    "about": "Only the receiving side holds parts it did not check."
+  },
+  {
+    "case": "rules/closing-count-mismatch",
+    "about": "closing.record_count says 3 and closing.record_ids lists 2."
+  },
+  {
+    "case": "rules/file-failed-without-reason",
+    "about": "A file record that failed and names no reason."
+  },
+  {
+    "case": "rules/file-completed-with-reason",
+    "about": "A file record that completed and still names a failure reason."
+  },
+  {
+    "case": "rules/conversation-id-not-opaque",
+    "about": "A conversation id must be opaque: an email address is refused."
+  },
+  {
+    "case": "rules/otel-trace-id-all-zero",
+    "about": "An all-zero trace id is OpenTelemetry's no-span value: absent, never written."
+  },
+  {
+    "case": "rules/event-section-unknown-field",
+    "about": "A field outside the event section's closed list."
+  },
+  {
+    "case": "precedence/misspelt-required-member",
+    "about": "run_id written as runid: an unknown member and a missing one. unknown_field comes before missing_field."
+  },
+  {
+    "case": "precedence/unknown-before-bad-value",
+    "about": "An unknown member in metadata and a bad data_mode: unknown_field comes before bad_value, whatever the pointers."
+  },
+  {
+    "case": "precedence/two-unknown-fields",
+    "about": "Two unknown members, written zz first: the smaller pointer is reported, not the first in the text."
+  },
+  {
+    "case": "precedence/two-missing-fields",
+    "about": "run_id and seq both missing: run_id is the smaller pointer."
+  },
+  {
+    "case": "precedence/two-bad-values",
+    "about": "A bad conversation id and a bad data_mode: /context comes before /metadata."
+  },
+  {
+    "case": "precedence/array-indexes-compare-as-numbers",
+    "about": "Bad values at record_ids/2 and record_ids/10: an array index compares as a number, so 2 is reported."
+  },
+  {
+    "case": "precedence/two-hidden-fields-present",
+    "about": "run.name and gen_ai.tool.name both hidden and both present: the paths are read in sorted order."
+  },
+  {
+    "case": "precedence/two-hidden-fields-present-other-order",
+    "about": "The same record with the hidden paths written in the other order: the same reading."
+  },
+  {
+    "case": "precedence/hidden-before-revealed",
+    "about": "A hidden field present and a revealed field absent: the hidden rule is read first."
+  },
+  {
+    "case": "precedence/revealed-absent-before-unlisted",
+    "about": "A listed field absent and a present field unlisted: revealed_field_absent is read first."
+  },
+  {
+    "case": "precedence/two-revealed-absent",
+    "about": "Two listed fields absent, listed out of order: the paths are read in sorted order."
+  },
+  {
+    "case": "disclosure/revealed-null-listed",
+    "about": "Tool arguments revealed as null and listed: a member written as null is present."
+  },
+  {
+    "case": "disclosure/revealed-null-unlisted",
+    "about": "Tool arguments revealed as null and not listed: null is present, so it is a field in clear that is not listed."
+  },
+  {
+    "case": "handoff/unchecked-parts-count-without-list",
+    "about": "A count of one unchecked part and no list of positions."
+  },
+  {
+    "case": "handoff/file-parts-exceed-parts",
+    "about": "Seven file parts in a message of one part."
+  },
+  {
+    "case": "handoff/unchecked-parts-exceed-file-parts",
+    "about": "Two unchecked parts in a message with one file part."
+  },
+  {
+    "case": "handoff/pair-parts-agree",
+    "about": "A received record read with the sender's record of the same message: the part counts agree."
+  },
+  {
+    "case": "handoff/pair-parts-disagree",
+    "about": "The receiver records no parts for a message the sender recorded with two: one message, two part counts, a finding that moves no verdict."
+  },
+  {
+    "case": "handoff/pair-parts-disagree-sender-side",
+    "about": "The same pair read from the sender: the sender's record shows the finding too, and still reads verified, because the receiver's key cannot move it."
+  },
+  {
+    "case": "handoff/pair-file-parts-disagree",
+    "about": "The receiver records no file part where the sender recorded one."
+  },
+  {
+    "case": "handoff/pair-two-counterparts-disagree",
+    "about": "Two received records of the sender's message, one off on parts and one on file parts: one finding."
+  },
+  {
+    "case": "handoff/pair-two-counterparts-disagree-other-order",
+    "about": "The same two received records held in the other order: the same reading."
+  },
+  {
+    "case": "handoff/pair-one-of-two-counterparts-disagrees",
+    "about": "Two received records of the sender's message, the first held agreeing and the second not: every counterpart is compared."
+  },
+  {
+    "case": "handoff/pair-other-message-not-compared",
+    "about": "A received record of another message from the same sender: its counts are not compared."
+  },
+  {
+    "case": "pairing/decoy-start-under-another-key",
+    "about": "The genuine start, and a record under another key that reuses its event_id: only the end's own key's records are candidates, so the decoy changes nothing."
+  },
+  {
+    "case": "pairing/two-candidates-one-good",
+    "about": "The genuine start and a record of another type that the same key signed under its event_id: every candidate is graded and the worst reading stands."
+  },
+  {
+    "case": "pairing/two-candidates-one-good-other-order",
+    "about": "The same two candidates held in the other order: the same reading."
+  },
+  {
+    "case": "pairing/two-failing-candidates",
+    "about": "Two candidates that fail on different checks: the worse check, the type, is reported."
+  },
+  {
+    "case": "pairing/two-failing-candidates-other-order",
+    "about": "The same two candidates in the other order: the same reading."
+  },
+  {
+    "case": "pairing/start-held-twice",
+    "about": "The start held twice, byte for byte: the held records are a set, so it is one candidate and nothing is ambiguous."
+  },
+  {
+    "case": "pairing/end-names-itself",
+    "about": "A tool call end whose run.started_event_id is its own event_id, read with nothing held: it names no other record, so its start is not held."
+  },
+  {
+    "case": "pairing/end-names-itself-held-beside-itself",
+    "about": "The same end, with a copy of itself in the held records: the record itself is not one of its held records, so the copy is set aside and the reading is the same."
+  },
+  {
+    "case": "pairing/two-good-candidates",
+    "about": "Two different records under the end's key and event_id that both pair: the ambiguity is named."
+  },
+  {
+    "case": "pairing/start-ended-by-an-end-with-a-second-candidate",
+    "about": "A start and its end, beside a record of another type under the same key and the start's event_id: the end reads failed against that record, and still ends this start, because an end is graded against each start on its own. The held record at run.seq 4 shows a gap before this start."
+  },
+  {
+    "case": "pairing/end-names-a-start-in-another-invocation",
+    "about": "The start carries the end's run id under another root run id: one operation is in one invocation."
+  },
+  {
+    "case": "pairing/approval-resolved-names-a-tool-call",
+    "about": "An approval answer names a tool call start in its own run: the type is checked for approvals too."
+  },
+  {
+    "case": "pairing/tool-call-in-two-runs-same-conversation",
+    "about": "A tool call end names a start in another invocation of the same conversation, both ids differing: the conversation exception is for approvals only."
+  },
+  {
+    "case": "pairing/end-whose-only-start-fails",
+    "about": "The record the end names does not itself verify: it is not a start, and the end reads its start absent."
+  },
+  {
+    "case": "pairing/start-whose-only-end-fails",
+    "about": "The only record that names the start does not itself verify: it ends nothing."
+  },
+  {
+    "case": "pairing/start-whose-only-end-is-incomplete",
+    "about": "The only record that names the start is in a version the reader does not know: it ends nothing."
+  },
+  {
+    "case": "pairing/start-with-a-failing-end-beside-a-good-one",
+    "about": "A record that does not itself verify and a good end both name the start: one end."
+  },
+  {
+    "case": "pairing/start-with-a-good-end-beside-a-failing-one",
+    "about": "The same two records held in the other order."
+  },
+  {
+    "case": "pairing/start-whose-only-end-another-key-signed",
+    "about": "The only end is signed by another key: it ends nothing."
+  },
+  {
+    "case": "pairing/start-whose-only-end-is-another-run",
+    "about": "The only end carries another run id: it is another operation's end."
+  },
+  {
+    "case": "pairing/start-whose-only-end-names-another-tool",
+    "about": "The only end names another tool: it is not this call's end."
+  },
+  {
+    "case": "pairing/end-key-in-upper-case",
+    "about": "The end's envelope key in upper case: a key compares as a key."
+  },
+  {
+    "case": "pairing/start-key-in-upper-case",
+    "about": "The start's envelope key in upper case, read from the end."
+  },
+  {
+    "case": "pairing/tool-call-names-another-tool",
+    "about": "A tool call that started as read_balance and ended as transfer_funds."
+  },
+  {
+    "case": "pairing/tool-call-hidden-name-matches",
+    "about": "The end hides the tool name, and its hash is the hash of the start's name."
+  },
+  {
+    "case": "pairing/tool-call-hidden-name-not-encodable",
+    "about": "The start names the tool with a lone surrogate, which JCS cannot encode: it commits to nothing, so no hidden hash matches it."
+  },
+  {
+    "case": "pairing/tool-call-name-not-encodable-in-both-halves",
+    "about": "Both halves name the tool in clear with the same lone surrogate: the values are the same, so the halves agree."
+  },
+  {
+    "case": "pairing/tool-call-hidden-name-differs",
+    "about": "The end hides a tool name whose hash is not the hash of the start's name."
+  },
+  {
+    "case": "pairing/model-call-another-provider",
+    "about": "A model call that started at one provider and ended at another."
+  },
+  {
+    "case": "pairing/model-call-another-operation",
+    "about": "A model call that started as chat and ended as embeddings."
+  },
+  {
+    "case": "pairing/approval-halves-agree",
+    "about": "An approval whose two halves name one action, one decider and one policy."
+  },
+  {
+    "case": "pairing/approval-resolved-names-another-action",
+    "about": "The answer names another action than the request: a reader would see action Y approved when X was shown."
+  },
+  {
+    "case": "pairing/approval-resolved-by-another-decider",
+    "about": "A request to a human answered by a model."
+  },
+  {
+    "case": "pairing/approval-resolved-under-another-policy",
+    "about": "The two halves name two policies."
+  },
+  {
+    "case": "pairing/approval-two-fields-differ",
+    "about": "Action and decider both differ: the fields are checked in a fixed order, the action first."
+  },
+  {
+    "case": "end-only/read-alone",
+    "about": "An end with no start, read on its own: steps 1 to 6 verify it."
+  },
+  {
+    "case": "end-only/declared-on-run-opened",
+    "about": "The invocation's run_opened says this adapter cannot capture a tool call start: end only, start not observed."
+  },
+  {
+    "case": "end-only/declared-with-observed-start-time",
+    "about": "The same end carrying the start time its source reported: shown, and still no start was signed live."
+  },
+  {
+    "case": "end-only/declared-on-the-first-record",
+    "about": "No run_opened: the declaration is on the invocation's first record."
+  },
+  {
+    "case": "end-only/declared-on-the-end-itself",
+    "about": "A one-record invocation: the end is the first record and carries the declaration."
+  },
+  {
+    "case": "end-only/declared-under-another-key",
+    "about": "The declaration is on a run_opened another key signed."
+  },
+  {
+    "case": "end-only/undeclared",
+    "about": "The run_opened declares nothing: an end with no start is a finding."
+  },
+  {
+    "case": "end-only/declared-for-another-type",
+    "about": "The declaration names model call starts, not tool call starts."
+  },
+  {
+    "case": "end-only/declared-in-another-invocation",
+    "about": "The declaration is on another invocation's run_opened."
+  },
+  {
+    "case": "rules/capture-not-at-head",
+    "about": "A cannot-capture list on a record that is not the invocation's first."
+  },
+  {
+    "case": "rules/run-opened-not-at-head",
+    "about": "agent.run_opened is the invocation's first record, at seq 0."
+  },
+  {
+    "case": "rules/content-scrubbed",
+    "about": "The adapter replaced credential-shaped values before hashing, and says so: a reader shows it."
+  },
+  {
+    "case": "rules/content-scrubbed-on-a-file",
+    "about": "A file's content is its bytes, never rewritten."
+  },
+  {
+    "case": "rules/chain-key-without-chain",
+    "about": "A previous_hash with no context.chain_key: a link of a chain that names no chain, which no SDK builds."
+  },
+  {
+    "case": "rules/event-ref-data-uri",
+    "about": "A data: URI carries content, not a locator."
+  },
+  {
+    "case": "rules/protocol-control-character",
+    "about": "A protocol marker with a newline."
+  },
+  {
+    "case": "rules/message-bytes-hash-upper-case",
+    "about": "message_bytes_hash in upper case, as message_hash may be."
+  },
+  {
+    "case": "rules/message-bytes-hash-not-a-hash",
+    "about": "message_bytes_hash that is not a SHA-256: the schema checks its form, and nothing grades its value."
+  },
+  {
+    "case": "rules/chain-key-not-opaque",
+    "about": "A chain key is an id, sent in private mode: free text is refused."
+  },
+  {
+    "case": "rules/tool-call-id-free-text",
+    "about": "A tool call id is sent in private mode: free text is refused."
+  },
+  {
+    "case": "rules/response-id-free-text",
+    "about": "A response id is sent in private mode: free text is refused."
+  },
+  {
+    "case": "rules/scope-name-free-text",
+    "about": "otel.scope.name is a package name: free text is refused."
+  },
+  {
+    "case": "rules/scope-version-not-semver",
+    "about": "otel.scope.version is a semantic version: free text is refused."
+  },
+  {
+    "case": "rules/authority-scope-too-many",
+    "about": "authority.scope holds at most 32 labels."
+  },
+  {
+    "case": "run-closed/completed-with-an-open-request",
+    "about": "The run closed completed, and an approval request it lists has no answer it lists."
+  },
+  {
+    "case": "run-closed/interrupted-with-an-open-request",
+    "about": "The same run closed interrupted: no finding."
+  },
+  {
+    "case": "run-closed/completed-with-every-start-ended",
+    "about": "The run closed completed, and every start it lists has an end it lists."
+  },
+  {
+    "case": "run-closed/completed-with-an-end-not-listed",
+    "about": "The run closed completed and lists a start whose end it does not list."
+  },
+  {
+    "case": "run-closed/completed-with-a-failing-end",
+    "about": "The run closed completed, and the record held under its listed end's event_id does not itself verify: the reader does not hold that end, so the closing record is not judged."
+  },
+  {
+    "case": "run-closed/completed-with-a-listed-end-not-held",
+    "about": "The run closed completed over a start and its end, and the reader holds only the start: the closing record is not judged, and no open operation is claimed."
+  },
+  {
+    "case": "run-closed/interrupted-with-a-listed-record-not-held",
+    "about": "A closing record of any status is judged only on every record it lists."
+  },
+  {
+    "case": "run-closed/listed-record-held-under-another-key",
+    "about": "The listed end is held only under another key: it is not this run's record."
+  },
+  {
+    "case": "run-closed/no-listed-record-held",
+    "about": "Neither listed record is held: step 7 reports both, in list order, and the first is the reading's reason."
+  },
+  {
+    "case": "run-closed/first-and-last-listed-records-not-held",
+    "about": "Three records listed and only the middle one held: both absent records are reported, in list order."
+  },
+  {
+    "case": "run-closed/lists-itself",
+    "about": "The closing record lists its own event_id beside a start and its end, and the verifier holds the start and the end: its own id is not held, so the closing record is not judged."
+  },
+  {
+    "case": "run-closed/lists-itself-held-beside-itself",
+    "about": "The same closing record, with a copy of itself in the held records: the record itself is not one of its held records, so the copy is set aside and the reading is the same."
+  },
+  {
+    "case": "run-closed/incomplete-keeps-reading-step-7",
+    "about": "The closing record lists records the verifier does not hold, beside a first record in another mode: the closing record reads incomplete, and step 7 still runs every sub-step, so the mode finding of step 7f is made."
+  },
+  {
+    "case": "run-closed/two-absent-records-in-list-order",
+    "about": "Eleven records listed, and the ones at index 2 and index 10 not held: step 7 reports /2 before /10, in list order and not in string order."
+  },
+  {
+    "case": "run-closed/completed-with-a-listed-step-occurred",
+    "about": "The run closed completed and lists an agent.step.occurred: it is one record and no operation, so nothing is open and there is no finding."
+  },
+  {
+    "case": "run-closed/stated-completed-over-an-open-request",
+    "about": "The adapter saw the run end interrupted and the caller said completed: the check reads the adapter's status only."
+  },
+  {
+    "case": "run-closed/completed-with-a-start-under-another-key",
+    "about": "Every listed record is held under the run's key, the start ended; another key's record under the start's event_id has no end: it is not this run's."
+  },
+  {
+    "case": "data-mode/mixed-in-one-invocation",
+    "about": "A decision in full mode read beside its invocation's run_opened in private mode: one invocation, two modes."
+  },
+  {
+    "case": "data-mode/two-modes-under-two-keys",
+    "about": "The same two records, the run_opened signed by another key: an invocation is one key's, so there is no finding."
+  },
+  {
+    "case": "data-mode/mixed-on-two-chains",
+    "about": "Two modes in one invocation under one key, on two chains: still one invocation."
+  },
+  {
+    "case": "handoff/pair-receiver-names-another-sender",
+    "about": "The sender's record, beside a received record signed by the key the sender names that names a third key as its sender: not candidates for each other, so their counts are not compared."
+  },
+  {
+    "case": "handoff/pair-receiver-names-another-sender-read-from-receiver",
+    "about": "The same two records read from the receiver: the same reading on both sides."
+  },
+  {
+    "case": "handoff/pair-two-sent-records-not-compared",
+    "about": "Two agent.handoff.sent records of one message under two keys that name each other, with different counts: a pair is one sent and one received record, so they are not compared."
+  },
+  {
+    "case": "handoff/pair-hash-in-upper-case",
+    "about": "The received record writes the message hash in upper case: one message, compared case-insensitively, and its counts differ."
+  },
+  {
+    "case": "pairing/approval-two-run-ids-one-invocation",
+    "about": "An approval answered under another run id in the same invocation: the exception needs both ids to differ."
+  },
+  {
+    "case": "pairing/approval-one-run-id-two-invocations",
+    "about": "An approval answered in another invocation under the request's run id: the exception needs both ids to differ."
+  },
+  {
+    "case": "event-schema/trailing-newline",
+    "about": "sanning.agent/1 followed by a newline: $ is the end of the string, with no exception for a final newline."
+  },
+  {
+    "case": "event-schema/non-ascii-digit",
+    "about": "sanning.agent/ with ARABIC-INDIC DIGIT ONE: a digit is an ASCII digit."
+  },
+  {
+    "case": "rules/id-trailing-newline",
+    "about": "A run id followed by a newline, which a search for ^...$ in Python would accept: refused."
+  },
+  {
+    "case": "rules/version-non-ascii-digit",
+    "about": "A package version whose major is ARABIC-INDIC DIGIT ONE: refused."
+  },
+  {
+    "case": "rules/head-seq-zero-prev-set",
+    "about": "run.seq 0 with a previous record named: not the first record, and not any other."
+  },
+  {
+    "case": "rules/head-prev-null-seq-set",
+    "about": "No previous record, at run.seq 14: not the first record, and not any other."
+  },
+  {
+    "case": "end-only/declared-on-a-second-head",
+    "about": "The invocation's run_opened declares nothing, and a later record under the same key also sits at run.seq 0 and declares: two first records are none, so the declaration does not count."
+  },
+  {
+    "case": "end-only/declared-on-a-head-held-twice",
+    "about": "The declaring run_opened held twice, byte for byte: one record, so one first record."
+  },
+  {
+    "case": "seq/two-records-at-seq-zero",
+    "about": "A record at run.seq 0 beside the invocation's run_opened, also at run.seq 0, under the same key."
+  },
+  {
+    "case": "seq/two-records-at-one-position",
+    "about": "Two different records at run.seq 6 of one invocation under one key."
+  },
+  {
+    "case": "seq/mixed-mode-and-duplicate-in-step-order",
+    "about": "A decision in full mode, beside a first record in private mode and a second decision at the same position: the findings in step order, 7f, then 7g, then 7i."
+  },
+  {
+    "case": "seq/same-event-id-other-bytes",
+    "about": "A held record under the same event_id, key and position with other bytes: it is another record, so the position holds two."
+  },
+  {
+    "case": "seq/same-record-held-beside-itself",
+    "about": "The record under test is also in the held records: one record, no duplicate. No closing record is held."
+  },
+  {
+    "case": "seq/one-position-two-keys",
+    "about": "Two records at run.seq 0 of one root run id under two keys: not one invocation."
+  },
+  {
+    "case": "seq/one-position-two-invocations",
+    "about": "Two records at run.seq 0 under one key in two invocations."
+  },
+  {
+    "case": "precedence/hidden-before-capture",
+    "about": "A hidden field present and a cannot-capture list off the first record: the hidden rule is read first."
+  },
+  {
+    "case": "precedence/unlisted-before-capture",
+    "about": "A revealed field not listed and a cannot-capture list off the first record: revealed_field_unlisted is read first."
+  },
+  {
+    "case": "precedence/capture-before-file-parts",
+    "about": "A cannot-capture list off the first record and more file parts than parts: capture_not_at_head is read first."
+  },
+  {
+    "case": "precedence/file-parts-before-unchecked",
+    "about": "More file parts than parts, and a list of unchecked held parts with no count: file_parts_exceed_parts is read first."
+  },
+  {
+    "case": "precedence/mismatch-before-exceed",
+    "about": "A count that is not the list's length and more than the file parts: unchecked_held_parts_mismatch is read first."
+  },
+  {
+    "case": "precedence/mismatch-before-index",
+    "about": "A count that is not the list's length and an index past the parts: unchecked_held_parts_mismatch is read first."
+  },
+  {
+    "case": "precedence/exceed-before-index",
+    "about": "More unchecked held parts than file parts, and an index past the parts: unchecked_held_parts_exceed_file_parts is read first."
+  },
+  {
+    "case": "precedence/capture-before-closing-count",
+    "about": "A cannot-capture list off the first record and a record count that is not the list's length: capture_not_at_head is read first."
+  },
+  {
+    "case": "precedence/capture-before-artifact-reason",
+    "about": "A cannot-capture list off the first record and a failed file with no reason: capture_not_at_head is read first."
+  },
+  {
+    "case": "precedence/hidden-before-artifact-reason",
+    "about": "A failed file with no reason and a hidden path present: the hidden rule is read first."
+  },
+  {
+    "case": "rules/observed-start-not-a-date",
+    "about": "An observed start time with month 99: an RFC 3339 time has month 01 to 12."
+  },
+  {
+    "case": "rules/content-type-control-character",
+    "about": "A hand-off content type with a NUL: no control characters."
+  },
+  {
+    "case": "rules/scope-name-tilde",
+    "about": "A package name with ~, which no registry admits in a new name."
+  },
+  {
+    "case": "rules/closing-reason-free-text",
+    "about": "A closing reason is a code from a closed list: free text is refused."
+  },
+  {
+    "case": "data-mode/standard-file",
+    "about": "A file record in standard mode: the path, the source, the destination and the size reach Sanning only in full."
+  },
+  {
+    "case": "data-mode/full-file",
+    "about": "A file record in full mode: the path, the source, the destination and the size reach Sanning only in full."
+  },
+  {
+    "case": "rules/salt-upper-case",
+    "about": "A salt in upper-case hex: the salt is 32 lowercase hex characters."
+  },
+  {
+    "case": "rules/salt-too-short",
+    "about": "A salt of 31 hex characters: 128 bits are 32."
+  },
+  {
+    "case": "rules/salt-too-long",
+    "about": "A salt of 64 hex characters: the salt is exactly 32, never more."
+  },
+  {
+    "case": "rules/case-id-not-opaque",
+    "about": "A case id that fails the id grammar is refused, never left out or rewritten."
+  },
+  {
+    "case": "rules/agent.step.ended-skipped",
+    "about": "agent.step.ended with outcome.status skipped: the operation never ran because a policy, a hook or an approval stopped it."
+  },
+  {
+    "case": "rules/agent.model_call.ended-skipped",
+    "about": "agent.model_call.ended with outcome.status skipped: the operation never ran because a policy, a hook or an approval stopped it."
+  },
+  {
+    "case": "rules/agent.tool_call.ended-skipped",
+    "about": "agent.tool_call.ended with outcome.status skipped: the operation never ran because a policy, a hook or an approval stopped it."
+  },
+  {
+    "case": "rules/agent.retrieval.ended-skipped",
+    "about": "agent.retrieval.ended with outcome.status skipped: the operation never ran because a policy, a hook or an approval stopped it."
+  },
+  {
+    "case": "rules/run-closed-skipped",
+    "about": "skipped ends an operation, never a run: it is not a closing status."
+  },
+  {
+    "case": "rules/tool-call-ended-not-run",
+    "about": "not_run is not a status: the word is skipped."
+  },
+  {
+    "case": "rules/approval-responded",
+    "about": "An approval answered with the person's text in place of the tool's result: the verdict responded."
+  },
+  {
+    "case": "rules/file-skipped",
+    "about": "A file record is completed or failed, never skipped: the shared outcome words do not apply to it."
+  },
+  {
+    "case": "rules/file-interrupted",
+    "about": "A file record is completed or failed, never interrupted: the shared outcome words do not apply to it."
+  },
+  {
+    "case": "rules/approval-verdict-respond",
+    "about": "respond, the framework's word, is not a verdict: verdicts are past tense."
+  },
+  {
+    "case": "refusal/completed-after-rejected",
+    "about": "The approval of this tool call resolved rejected, and the call ended completed: it ran after its approval refused it."
+  },
+  {
+    "case": "pairing/failed-pair-keeps-reading-step-7",
+    "about": "The end's only candidate start is another tool call's, and an answer under this key refused the start the end names: the end reads failed at step 7a, and step 7 still runs every sub-step, so the finding of step 7h is made."
+  },
+  {
+    "case": "refusal/failed-after-responded",
+    "about": "The approval resolved responded, and the call ended failed: anything but skipped is a run."
+  },
+  {
+    "case": "refusal/interrupted-after-rejected",
+    "about": "The approval resolved rejected, and the call ended interrupted: an interrupt ends the call before any answer, so no finding."
+  },
+  {
+    "case": "refusal/skipped-after-rejected",
+    "about": "The approval resolved rejected, and the call ended skipped: no finding."
+  },
+  {
+    "case": "refusal/skipped-after-responded",
+    "about": "The approval resolved responded, and the call ended skipped: no finding."
+  },
+  {
+    "case": "refusal/completed-after-approved",
+    "about": "The approval resolved approved, and the call ended completed: no finding."
+  },
+  {
+    "case": "refusal/completed-after-edited",
+    "about": "The approval resolved edited, and the call ran with the edited action: no finding."
+  },
+  {
+    "case": "refusal/refusal-under-another-key",
+    "about": "A rejection signed by another key names this call: it is not this agent's approval, and no finding is made."
+  },
+  {
+    "case": "refusal/refusal-of-another-call",
+    "about": "A rejection of another action, beside this call's end: no finding."
+  },
+  {
+    "case": "refusal/refusal-that-fails",
+    "about": "The only rejection does not itself verify: it refuses nothing."
+  },
+  {
+    "case": "refusal/refusal-read-from-the-start",
+    "about": "The rejection and a completed end, read from the call's start: the finding is on the end, not the start."
+  },
+  {
+    "case": "refusal/rejected-in-a-later-run",
+    "about": "The call ended interrupted at the interrupt, and the rejection arrived in the resumed invocation: no end is written after the resume, and no finding."
+  },
+  {
+    "case": "refusal/rejected-in-a-later-run-read-from-the-answer",
+    "about": "The same rejection, read from the answer: it pairs with its request across the two invocations."
+  },
+  {
+    "case": "refusal/completed-after-a-rejection-in-another-invocation",
+    "about": "The call ended completed, and a rejection of its start under the same key was written in another invocation: a refusal from any invocation counts."
+  },
+  {
+    "case": "refusal/completed-after-rejected-then-approved",
+    "about": "A policy rejected the call, a later answer approved it, and it ended completed: any refusal of the start counts, so an escalation still shows the finding."
+  },
+  {
+    "case": "refusal/refusal-that-names-no-request",
+    "about": "The rejection names no request (run.started_event_id null, as after a resume with no store): it is still the agent's signed refusal, and counts."
+  },
+  {
+    "case": "refusal/refused-with-a-gap-in-step-order",
+    "about": "A completed call after a rejection, its start not held, a gap before it: the findings in step order, 7a, then 7h, then 7i."
+  },
+  {
+    "case": "run-closed/completed-with-a-skipped-tool-call",
+    "about": "The run closed completed over a tool call its approval refused, which ended skipped: the call is ended, and no operation is open."
+  },
+  {
+    "case": "incomplete/seq-gap-before-this-record",
+    "about": "A decision at run.seq 14 read beside its invocation's run_opened at 0: the positions between are not held, so the run may be incomplete."
+  },
+  {
+    "case": "incomplete/seq-no-gap-before-this-record",
+    "about": "The record at run.seq 13 is held: nothing is missing directly before this one, whatever is missing further back."
+  },
+  {
+    "case": "incomplete/seq-nothing-earlier-held",
+    "about": "Only a later record is held: a slice, not a gap."
+  },
+  {
+    "case": "incomplete/seq-earlier-record-under-another-key",
+    "about": "The record at run.seq 0 is held under another key: it is not this invocation's."
+  },
+  {
+    "case": "incomplete/seq-earlier-record-of-another-invocation",
+    "about": "The record at run.seq 0 is another invocation's."
+  },
+  {
+    "case": "incomplete/seq-record-before-fails",
+    "about": "The record at run.seq 13 is held and does not itself verify: it takes no part, so the position before this record has no record that counts."
+  },
+  {
+    "case": "incomplete/seq-earlier-record-fails",
+    "about": "The only earlier record does not itself verify: it takes no part, so no gap is seen."
+  },
+  {
+    "case": "incomplete/closing-not-held",
+    "about": "The run_opened promises a closing record, and the verifier holds records of the invocation but no closing record: the run may be incomplete."
+  },
+  {
+    "case": "incomplete/closing-held",
+    "about": "The run_opened read beside its invocation's closing record: no finding."
+  },
+  {
+    "case": "incomplete/closing-held-under-another-key",
+    "about": "The only closing record is signed by another key: not this invocation's."
+  },
+  {
+    "case": "incomplete/closing-of-another-invocation",
+    "about": "The only closing record is another invocation's."
+  },
+  {
+    "case": "incomplete/closing-fails",
+    "about": "The only closing record does not itself verify: it closes nothing."
+  },
+  {
+    "case": "rules/custom-name-upper-case",
+    "about": "A custom name in upper case: a-z, 0-9, underscore and dot only."
+  },
+  {
+    "case": "rules/custom-name-too-long",
+    "about": "A custom name of 65 characters: at most 64."
+  },
+  {
+    "case": "rules/custom-name-64-characters",
+    "about": "A custom name of 64 characters, the most allowed."
+  },
+  {
+    "case": "rules/custom-name-free-text",
+    "about": "A custom name with a space: free text is refused."
+  },
+  {
+    "case": "rules/custom-name-digit-dot-dot",
+    "about": "A custom name of a digit and two dots: no segment is empty or starts with a digit."
+  },
+  {
+    "case": "rules/custom-name-empty",
+    "about": "An empty custom name: a name has at least one segment."
+  },
+  {
+    "case": "rules/custom-name-dot-only",
+    "about": "A custom name that is one dot: two empty segments."
+  },
+  {
+    "case": "rules/custom-name-empty-segment",
+    "about": "A custom name with two dots in a row: an empty segment."
+  },
+  {
+    "case": "rules/custom-name-leading-dot",
+    "about": "A custom name that starts with a dot: an empty first segment."
+  },
+  {
+    "case": "rules/custom-name-trailing-dot",
+    "about": "A custom name that ends with a dot: an empty last segment."
+  },
+  {
+    "case": "rules/custom-name-leading-digit",
+    "about": "A custom name whose first segment starts with a digit."
+  },
+  {
+    "case": "rules/custom-name-segment-leading-digit",
+    "about": "A custom name whose second segment starts with a digit: every segment starts with a letter."
+  },
+  {
+    "case": "rules/custom-name-leading-underscore",
+    "about": "A custom name whose first segment starts with an underscore."
+  },
+  {
+    "case": "rules/custom-name-segment-leading-underscore",
+    "about": "A custom name whose second segment starts with an underscore: every segment starts with a letter."
+  },
+  {
+    "case": "rules/custom-name-hyphen",
+    "about": "A custom name with a hyphen: a-z, 0-9, underscore and dot only."
+  },
+  {
+    "case": "rules/custom-name-non-ascii-letter",
+    "about": "A custom name with a non-ASCII letter: a-z is the 26 ASCII letters."
+  },
+  {
+    "case": "rules/custom-name-one-letter",
+    "about": "A custom name of one letter, the shortest allowed."
+  },
+  {
+    "case": "rules/custom-name-one-segment",
+    "about": "A custom name of one segment: a dot is not required."
+  },
+  {
+    "case": "rules/custom-name-many-segments",
+    "about": "A custom name of four one-letter segments."
+  },
+  {
+    "case": "rules/custom-name-digits-and-underscores",
+    "about": "A custom name whose segments hold digits and underscores after the first letter, a trailing underscore included."
+  },
+  {
+    "case": "rules/custom-name-64-characters-dotted",
+    "about": "A dotted custom name of 64 characters, the most allowed."
+  },
+  {
+    "case": "disclosure/custom-value-revealed",
+    "about": "A custom value revealed in clear and listed."
+  },
+  {
+    "case": "disclosure/custom-value-not-listed",
+    "about": "A custom value in clear with no context.revealed entry."
+  },
+  {
+    "case": "disclosure/custom-name-not-hidable",
+    "about": "A custom name, like a decision name, cannot be hidden."
+  },
+  {
+    "case": "salt/missing-on-agent.run_opened",
+    "about": "agent.run_opened with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.run_closed",
+    "about": "agent.run_closed with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.step.started",
+    "about": "agent.step.started with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.step.ended",
+    "about": "agent.step.ended with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.model_call.started",
+    "about": "agent.model_call.started with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.model_call.ended",
+    "about": "agent.model_call.ended with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.tool_call.started",
+    "about": "agent.tool_call.started with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.tool_call.ended",
+    "about": "agent.tool_call.ended with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.retrieval.started",
+    "about": "agent.retrieval.started with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.retrieval.ended",
+    "about": "agent.retrieval.ended with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.approval.requested",
+    "about": "agent.approval.requested with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.approval.resolved",
+    "about": "agent.approval.resolved with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.handoff.sent",
+    "about": "agent.handoff.sent with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.handoff.received",
+    "about": "agent.handoff.received with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.decision",
+    "about": "agent.decision with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.custom",
+    "about": "agent.custom with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.file",
+    "about": "agent.file with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.error",
+    "about": "agent.error with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/missing-on-agent.step.occurred",
+    "about": "agent.step.occurred with no context.salt: every agent record carries one."
+  },
+  {
+    "case": "salt/present-on-event",
+    "about": "A plain event record with a salt of 32 lowercase hex characters: outside this vocabulary, so no verdict, and the salt is in its form."
+  },
+  {
+    "case": "salt/absent-on-event",
+    "about": "A plain event record with no salt: the salt is optional outside the agent types, so it still reads."
+  },
+  {
+    "case": "precedence/misplaced-version-before-salt",
+    "about": "A runner.egress record that claims the agent vocabulary and carries a salt in upper case: step 1 reads the misplaced version first."
+  },
+  {
+    "case": "salt/wrong-form-on-event",
+    "about": "An event record with a salt in upper-case hex: a salt present in the wrong form reads failed on any type."
+  },
+  {
+    "case": "salt/wrong-form-on-checkpoint",
+    "about": "A checkpoint record with a salt of 31 hex characters: a salt present in the wrong form reads failed on any type."
+  },
+  {
+    "case": "salt/wrong-form-on-declaration",
+    "about": "A declaration record with a salt of 64 hex characters: a salt present in the wrong form reads failed on any type."
+  },
+  {
+    "case": "salt/wrong-form-on-runner.run_opened",
+    "about": "A runner.run_opened record with a salt followed by a newline: a salt present in the wrong form reads failed on any type."
+  },
+  {
+    "case": "salt/wrong-form-on-runner.run_closed",
+    "about": "A runner.run_closed record with a salt that is a number: a salt present in the wrong form reads failed on any type."
+  },
+  {
+    "case": "salt/wrong-form-on-runner.egress",
+    "about": "A runner.egress record with a salt written as null, which is present: a salt present in the wrong form reads failed on any type."
+  },
+  {
+    "case": "salt/wrong-form-on-runner.relay",
+    "about": "A runner.relay record with a salt with a character that is not hex: a salt present in the wrong form reads failed on any type."
+  },
+  {
+    "case": "precedence/bad-salt-after-unknown-field",
+    "about": "An agent.decision with a salt in upper-case hex and an unknown member metadata.foo: the salt is read at step 4 with the rest of the schema, where unknown_field comes before bad_value. It is not read at step 1."
+  },
+  {
+    "case": "precedence/bad-salt-after-missing-version",
+    "about": "An agent.tool_call.started with a salt in upper-case hex and no extras.event_schema: step 2 reads the version before step 4 reads the salt."
+  },
+  {
+    "case": "salt/wrong-form-on-event-no-extras",
+    "about": "An event record with a salt in upper-case hex and no extras member at all: step 1 reads the salt without extras."
+  },
+  {
+    "case": "salt/wrong-form-on-event-beside-chain-key",
+    "about": "A chained event record whose context carries chain_key before a salt in upper-case hex: step 1 reads the salt wherever it sits among the context members, and the other members are the profile's."
+  },
+  {
+    "case": "rules/step-occurred-with-outcome",
+    "about": "An agent.step.occurred that carries the outcome of an operation: a step that occurred is not an operation."
+  },
+  {
+    "case": "rules/step-occurred-with-started-event-id",
+    "about": "An agent.step.occurred that carries a link to a start: a step that occurred is not an operation."
+  },
+  {
+    "case": "rules/step-occurred-with-observed-started-at",
+    "about": "An agent.step.occurred that carries a start time a source reported: a step that occurred is not an operation."
+  },
+  {
+    "case": "rules/step-occurred-with-client",
+    "about": "An agent.step.occurred that carries the client of a model call: a step that occurred is not an operation."
+  },
+  {
+    "case": "rules/step-occurred-with-tool",
+    "about": "An agent.step.occurred that carries the tool and its call id: a step that occurred is not an operation."
+  },
+  {
+    "case": "rules/step-occurred-with-model",
+    "about": "An agent.step.occurred that carries the model a call requested: a step that occurred is not an operation."
+  },
+  {
+    "case": "rules/step-occurred-with-provider",
+    "about": "An agent.step.occurred that carries the provider of a model call: a step that occurred is not an operation."
+  },
+  {
+    "case": "rules/step-occurred-with-response",
+    "about": "An agent.step.occurred that carries a model's response: a step that occurred is not an operation."
+  },
+  {
+    "case": "rules/step-occurred-with-usage",
+    "about": "An agent.step.occurred that carries a model call's token counts: a step that occurred is not an operation."
+  },
+  {
+    "case": "rules/step-occurred-with-operation-name",
+    "about": "An agent.step.occurred that carries an OpenTelemetry operation name: a step that occurred is not an operation."
+  },
+  {
+    "case": "rules/step-occurred-source-type-not-a-dotted-name",
+    "about": "An agent.step.occurred whose run.source_type is free text: it is a dotted name, as custom.name is."
+  },
+  {
+    "case": "rules/step-occurred-source-type-too-long",
+    "about": "An agent.step.occurred whose run.source_type is 65 characters: a dotted name is at most 64."
+  },
+  {
+    "case": "rules/step-occurred-source-type-64-characters",
+    "about": "An agent.step.occurred whose run.source_type is 64 characters: the longest dotted name."
+  },
+  {
+    "case": "rules/step-occurred-retry",
+    "about": "A retry between two attempts of a tool call, written as a step that occurred inside the call, with its name."
+  },
+  {
+    "case": "rules/step-occurred-source-type-digit-dot-dot",
+    "about": "An agent.step.occurred whose run.source_type is \"1..\": no segment is empty or starts with a digit."
+  },
+  {
+    "case": "rules/step-occurred-source-type-empty-segment",
+    "about": "An agent.step.occurred whose run.source_type is \"a..b\": an empty segment."
+  },
+  {
+    "case": "rules/step-occurred-source-type-trailing-dot",
+    "about": "An agent.step.occurred whose run.source_type is \"retry.\": an empty last segment."
+  },
+  {
+    "case": "rules/step-occurred-source-type-segment-leading-digit",
+    "about": "An agent.step.occurred whose run.source_type is \"retry.1x\": a segment that starts with a digit."
+  },
+  {
+    "case": "rules/step-occurred-source-type-hyphen",
+    "about": "An agent.step.occurred whose run.source_type is \"agent-action\": a hyphen is not allowed."
+  },
+  {
+    "case": "rules/step-occurred-source-type-upper-case-no-space",
+    "about": "An agent.step.occurred whose run.source_type is \"AgentAction\": upper case is not allowed."
+  },
+  {
+    "case": "rules/step-occurred-source-type-one-segment",
+    "about": "An agent.step.occurred whose run.source_type is one segment: a dot is not required."
+  },
+  {
+    "case": "disclosure/step-occurred-name-hidden",
+    "about": "An agent.step.occurred with run.name hidden: absent in clear, its hash listed in context.hidden."
+  },
+  {
+    "case": "rules/step-occurred-outside-any-operation",
+    "about": "An agent.step.occurred outside any operation: its run_id is the root_run_id and its parent_run_id is null."
+  },
+  {
+    "case": "pairing/parent-is-a-step-occurred",
+    "about": "A record whose run.parent_run_id is the run_id of a held agent.step.occurred: the parent is not an operation, so there is nothing to look for and no finding."
+  },
+  {
+    "case": "pairing/step-occurred-is-not-an-operation",
+    "about": "An agent.step.occurred read beside the step it occurs inside: it is one record, so it has no start to find and no end to wait for."
+  },
+  {
+    "case": "pairing/end-names-a-step-occurred",
+    "about": "A step end names an agent.step.occurred as its start: a step that occurred begins nothing."
+  }
+]

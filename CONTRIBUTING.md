@@ -13,7 +13,7 @@ To report a vulnerability, do not open an issue. Follow [`SECURITY.md`](SECURITY
 Two scripts produce every generated file, and two check them:
 
 - [`scripts/vocabulary.mjs`](scripts/vocabulary.mjs) defines every field of every type, and writes the schemas in [`schemas/sanning.agent/1/`](schemas/sanning.agent/1/).
-- [`scripts/generate.mjs`](scripts/generate.mjs) writes every case in [`conformance/cases/`](conformance/cases/): the record, the records held beside it, the content it commits to, and the reading it expects.
+- [`scripts/generate.mjs`](scripts/generate.mjs) writes every case in [`conformance/cases/`](conformance/cases/): the record, the records held beside it, the content it commits to, and the reading it expects. It also writes the index of the cases, [`conformance/index.md`](conformance/index.md) and [`conformance/index.json`](conformance/index.json).
 - `npm test` runs [`scripts/check.mjs`](scripts/check.mjs). It checks that the committed schemas and cases are what the generator writes, reads every case with the reference reading in [`scripts/read.mjs`](scripts/read.mjs), checks that each case reads as its `expected.json` says, and checks that `agent-events.md` names every type, field, reason and finding the schemas and the reading use, with each field in the right row of its data mode table.
 - `npm run mutate` runs [`scripts/mutate.mjs`](scripts/mutate.mjs). It changes the reference reading in 194 ways, each a reading a second implementation could make, and fails if any change leaves every case reading the same.
 

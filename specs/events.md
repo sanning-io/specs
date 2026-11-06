@@ -1,6 +1,6 @@
 # The `sanning.events/v2` profile
 
-This document defines the profile whose `spec_version` is `sanning.events/v2`: the signed envelope an SDK writes for each record, and the event record that envelope commits to. The records an agent writes under this profile are the `sanning.agent/1` vocabulary, [`agent-events.md`](agent-events.md), which governs the whole record of each of its types. This document states the profile as far as a reader of that vocabulary needs it.
+This document defines the profile whose `spec_version` is `sanning.events/v2`: the signed envelope an SDK writes for each record, and the event record that envelope commits to. The records an agent writes under this profile are the `sanning.agent/1` vocabulary, [`agent-events.md`](agent-events.md), which governs the whole record of each of its types. This document states the profile as far as a reader of that vocabulary needs it. The profile itself is defined in the [envelope specification](https://github.com/sanning-io/proof/blob/v0.20.0/specs/envelope-spec.md) in `sanning-io/proof`, and where the two differ, that specification governs.
 
 `MUST`, `MUST NOT`, `REQUIRED`, `SHOULD`, `RECOMMENDED`, `MAY` and `OPTIONAL` carry their [RFC 2119](https://www.rfc-editor.org/rfc/rfc2119) meanings wherever they appear in capitals.
 
@@ -91,6 +91,13 @@ Every signature an RFC 8032 signer makes satisfies these clauses. They exist bec
 
 The payload this profile commits to is never the caller's raw bytes. It is a JSON *event record* that itself commits to the caller's content by hash. The caller hashes its raw data locally and keeps the record, or its adapter does, and `payload_hash = SHA-256(JCS(event record))`. What else leaves the caller's system is set by the data mode ([`agent-events.md`](agent-events.md) section 7): in `private`, the default, Sanning receives the envelope and a fixed list of the record's fields, and never the content; in `full`, Sanning receives every field of the record and the content as well.
 
+Each section of an event record is defined in one place:
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../images/record-sections-dark.png">
+  <img alt="The sections of one event record and where each is defined. The core is defined in events.md section 3, and the closed set of types in agent-events.md section 3. The event section, what the record commits to, in agent-events.md section 4.2, and for hand-offs also in agent-events.md section 8. The context section in agent-events.md section 4.3 and events.md section 3. The metadata section, the clear fields, in agent-events.md sections 4.4 to 5. The extras section, the vocabulary version, in agent-events.md section 2." src="../images/record-sections.png" width="760">
+</picture>
+
 ```json
 {
   "payload_version": 1,
@@ -161,7 +168,7 @@ The types outside the agent vocabulary:
 - `event`, the default type for a single record when the caller names none. `event.content_hash` is REQUIRED.
 - `checkpoint`, reserved: the SDKs write none.
 - `declaration`, a type whose record body is specified in a later release, with the evidence pack.
-- `runner.run_opened`, `runner.run_closed`, `runner.egress` and `runner.relay`, four record types defined outside the agent vocabulary. This profile names them so the set is closed, and the SDKs build none of them.
+- `runner.run_opened`, `runner.run_closed`, `runner.egress` and `runner.relay`, reserved: this profile names them so the set is closed, and does not define them. The SDKs build none of them.
 
 The vocabulary reads only the `extras` and the salt of a record of these seven types (`agent-events.md` section 10, step 1).
 
