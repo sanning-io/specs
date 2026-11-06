@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0 (2026-10-30)
+## 1.0 (ratified 2026-10-30, published 2026-11-07)
 
 The first release:
 
