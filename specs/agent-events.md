@@ -578,7 +578,7 @@ Only the receiver knows which bytes it held. A receiver that omits both the list
 
 ### 8.2 The message and its parts
 
-This section and section 8.3 summarize the hand-off rules of the `sanning.events/v2` profile for a reader of this vocabulary. The profile states them in section 4.1 of the [envelope specification](https://github.com/sanning-io/proof/blob/v0.20.0/specs/envelope-spec.md) in `sanning-io/proof`, and where the two differ, that section governs. The cases that pin them are in [`test-vectors/handoff/`](https://github.com/sanning-io/proof/tree/v0.20.0/test-vectors/handoff) in the same repository. The cases in this repository pin only the part counts of section 8.1.
+This section and section 8.3 summarize the hand-off rules of the `sanning.events/v2` profile for a reader of this vocabulary. The profile states them in section 4.1 of the [envelope specification](https://github.com/sanning-io/proof/blob/v0.20.0/specs/envelope-spec.md) in `sanning-io/proof`, and where the two differ, that section governs. Most of them are pinned by the vectors in [`test-vectors/handoff/`](https://github.com/sanning-io/proof/tree/v0.20.0/test-vectors/handoff) in the same repository. The cases in this repository pin only the part counts of section 8.1.
 
 `event.message_hash` is SHA-256 over the JCS (RFC 8785) bytes of the message object. It is canonical rather than raw, so a transport that parses and re-serializes JSON does not fail an honest hand-off. A file travels in a message as a file part, committed by its own hash inside that object, so a hand-off is not limited to JSON.
 
