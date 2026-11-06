@@ -6,13 +6,13 @@ Everything here works offline: you need no account, no API key and no network to
 
 A customer hashes its data locally and signs an event record that commits to it by hash. Only a Merkle root over many envelopes goes on a permanent public record.
 
-The data mode decides what Sanning receives:
+The data mode decides what Sanning receives. `private` is the default, and the only mode Sanning supports today:
 
 - **`private`** (the default): the signed envelope and a fixed list of the record's fields, never the content.
-- **`standard`**: more of the record's clear fields, never the content or a hash or length of it.
-- **`full`**: every field, and the content as well.
+- **`standard`** (not supported yet): more of the record's clear fields, never the content or a hash or length of it.
+- **`full`** (not supported yet): every field, and the content as well.
 
-All three are defined so records read the same whatever a service offers. Sanning's service offers only `private` today ([`specs/agent-events.md`](specs/agent-events.md) section 7).
+`standard` and `full` are specified so that a record reads the same in every mode. How Sanning offers them is still being worked out ([`specs/agent-events.md`](specs/agent-events.md) section 7).
 
 ## The path of one record
 
