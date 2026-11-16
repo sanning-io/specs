@@ -44,7 +44,7 @@ One directory per case, `conformance/cases/<group>/<name>/`, holding `record.jso
 
 ## Rules for a change
 
-- This repository is public, so a branch name, commit message, pull request, comment or review here is published. Write each one in this repository's own words, and link only to pages anyone can open.
+- This repository is public, so a branch name, commit message, pull request, comment or review here is published. Write each one in this repository's own words, and link only to pages anyone can open. The one exception is a Linear issue: link it by its short link, `https://linear.app/sanning-io/issue/SAN-123`, which carries no title.
 - Change the specification and the generator together, in one pull request.
 - A case `agent-events.md` cites must exist: `npm test` checks every `conformance/cases/...` link.
 - A change to a schema or to a case's reading is a new version of the vocabulary. Say in the pull request whether it adds (a minor version) or breaks (a major version), and add it to [`CHANGELOG.md`](CHANGELOG.md).
