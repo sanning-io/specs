@@ -44,6 +44,7 @@ One directory per case, `conformance/cases/<group>/<name>/`, holding `record.jso
 
 ## Rules for a change
 
+- This repository is public, so a branch name, commit message, pull request, comment or review here is published. Write each one in this repository's own words, and link only to pages anyone can open.
 - Change the specification and the generator together, in one pull request.
 - A case `agent-events.md` cites must exist: `npm test` checks every `conformance/cases/...` link.
 - A change to a schema or to a case's reading is a new version of the vocabulary. Say in the pull request whether it adds (a minor version) or breaks (a major version), and add it to [`CHANGELOG.md`](CHANGELOG.md).
